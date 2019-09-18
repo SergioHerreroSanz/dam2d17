@@ -1,0 +1,9 @@
+div {
+	border-style: solid;
+	width: 100%;
+	padding: 10px;
+}
+
+.center{
+	display: flex;
+}
