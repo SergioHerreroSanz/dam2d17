@@ -1,6 +1,6 @@
 # DESARROLLO DE INTERFACES
 
-## T1. Confección de interfaces (25h)
+## T1. Confección de interfaces de usuario (25h)
 - Visual Studio
 - WPF (.NET)
 	
