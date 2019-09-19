@@ -1,9 +1,25 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
 div {
-	border-style: solid;
 	width: 100%;
-	padding: 10px;
 }
 
 .center{
 	display: flex;
+}
+
+.top{
+	background-color: red;
+}
+.center-left{
+	background-color: green;
+}
+.center-right{
+	background-color: blue;
+}
+.bottom{
+	background-color: pink;
 }

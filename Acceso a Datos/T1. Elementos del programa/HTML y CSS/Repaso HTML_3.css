@@ -1,0 +1,23 @@
+.top{
+	display: flex;
+	justify-content: flex-center;
+}
+
+.top h1{
+	margin: 10px;
+	padding: 10px;
+}
+
+.nav {
+	margin: 10px;
+	display: flex;
+	justify-content: flex-start;
+	margin: auto;
+	padding: 10px;
+}
+.nav li {
+	margin: 10px;
+	padding: 10px;
+	border-style: solid;
+	list-style-type: none;
+}
