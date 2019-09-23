@@ -21,3 +21,51 @@
 	border-style: solid;
 	list-style-type: none;
 }
+
+.nav li:hover {
+	background: lightgrey;
+}
+
+.nav li a{
+	text-decoration: none;
+}
+
+.center{
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.center-left{
+	width: 15%;
+	padding: 25px;
+	padding-top: 50px;
+	
+}
+
+.center-right{
+	width: 80%;
+	padding: 20px;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.post{
+	margin: 7px auto 7px auto;
+	width: 45%;
+	border-style: solid;
+	padding: 20px;
+ }
+
+.post h2{
+	text-align: center;
+}
+
+.post img{
+	padding: 10px;
+}
+
+.post p{
+	width: 90%;
+	text-align: justify;
+}
