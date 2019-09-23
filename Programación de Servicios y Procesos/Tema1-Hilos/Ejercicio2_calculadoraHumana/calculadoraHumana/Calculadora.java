@@ -5,13 +5,14 @@ import java.util.Scanner;
 public class Calculadora extends Thread {
     @Override
     public void run() {
-        Scanner myScan= new Scanner(System.in);
+        Scanner myScan = new Scanner(System.in);
         int num1;
         int num2;
         int respuesta;
         int puntuacion = 0;
+        boolean run=true;
 
-        while(true) {
+        while (run) {
             num1 = (int) (Math.random() * 100);
             num2 = (int) (Math.random() * 100);
 
@@ -26,6 +27,12 @@ public class Calculadora extends Thread {
             }
 
             System.out.println(" Puntuación: " + puntuacion);
+            try {
+                Thread.sleep(0,1);
+            } catch (InterruptedException e) {
+                run = false;
+                System.out.println("¡Tiempo!");
+            }
         }
     }
 }
