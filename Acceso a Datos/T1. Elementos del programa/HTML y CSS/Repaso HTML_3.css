@@ -33,6 +33,7 @@
 .center{
 	display: flex;
 	flex-direction: row;
+	margin-bottom: 0px;
 }
 
 .center-left{
@@ -41,6 +42,17 @@
 	padding-top: 50px;
 	position: fixed;
 	float: left;
+}
+
+.center-left ul{
+	list-style-type: none;
+}
+
+.center-left ul li{
+	border-style: solid;
+	text-align: center;
+	margin: 5px;
+	padding: 2px;
 }
 
 .center-right{
@@ -55,9 +67,9 @@
 
 .post{
 	margin: 7px auto 7px auto;
-	width: 45%;
+	width: 44%;
 	border-style: solid;
-	padding: 20px;
+	padding: 25px;
  }
 
 .post h2{
@@ -75,13 +87,24 @@
 	text-align: justify;
 }
 
-.bottom ul{
+.rss{
 	display: flex;
+	float: right;
+	margin-top: 0px;
+	margin-right: 20px;
 }
 
-.bottom ul li{
+.rss li{
 	margin: 10px;
-	padding: 10px;
+	padding: 5px;
 	border-style: solid;
 	list-style-type: none;
+}
+
+.rss li:hover {
+	background: lightgrey;
+}
+
+.rss li a{
+	text-decoration: none;
 }
