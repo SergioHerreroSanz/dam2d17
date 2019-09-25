@@ -32,22 +32,25 @@
 
 .center{
 	display: flex;
-	flex-direction: row-reverse;
+	flex-direction: row;
 }
 
 .center-left{
 	width: 15%;
 	padding: 25px;
 	padding-top: 50px;
-	
+	position: fixed;
+	float: left;
 }
 
 .center-right{
 	width: 80%;
+	margin-left: 20%;
 	padding: 20px;
 	display: flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
+	float: right;
 }
 
 .post{
@@ -66,6 +69,19 @@
 }
 
 .post p{
-	width: 90%;
+	margin: auto;
+	padding-top: 10px;
+	width: 100%;
 	text-align: justify;
+}
+
+.bottom ul{
+	display: flex;
+}
+
+.bottom ul li{
+	margin: 10px;
+	padding: 10px;
+	border-style: solid;
+	list-style-type: none;
 }
