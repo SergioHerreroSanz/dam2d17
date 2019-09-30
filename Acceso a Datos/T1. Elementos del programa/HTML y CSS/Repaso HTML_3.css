@@ -1,3 +1,7 @@
+body{
+	background-color: #bfffff;
+}
+
 .top{
 	display: flex;
 	justify-content: flex-center;
@@ -20,10 +24,12 @@
 	padding: 10px;
 	border-style: solid;
 	list-style-type: none;
+	background-color: lightgrey;
+
 }
 
 .nav li:hover {
-	background: lightgrey;
+	background: #00eeff;
 }
 
 .nav li a{
@@ -53,6 +59,8 @@
 	text-align: center;
 	margin: 5px;
 	padding: 2px;
+	background-color: lightgrey;
+
 }
 
 .center-right{
@@ -70,6 +78,7 @@
 	width: 44%;
 	border-style: solid;
 	padding: 25px;
+	background-color: #00ffff;
  }
 
 .post h2{
@@ -99,10 +108,12 @@
 	padding: 5px;
 	border-style: solid;
 	list-style-type: none;
+	background-color: lightgrey;
+
 }
 
 .rss li:hover {
-	background: lightgrey;
+	background-color: #00eeff;
 }
 
 .rss li a{
