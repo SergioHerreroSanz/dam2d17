@@ -1,6 +1,7 @@
 <!--
 Crea dos documentos llamados respectivamente formulario1.php y visor1.php. En el primero de ellos incluye un formulario que permita recoger datos personales y académicos de tus alumnos, utilizando todos los tipos de campos de formulario que conozcas. Los datos insertados en ese formulario deberán ser visualizados después de su envío –con cualquier configuración de register_globals y con cualquier versión PHP– a través del documento visor1.php. Utiliza los recursos estéticos –fondos, colores, tipografía, etcétera– que estimes oportunos para una correcta presentación
 -->
+
 <html>
 	<head>
 		<title>Ejercicio09</title>
@@ -21,12 +22,12 @@ Crea dos documentos llamados respectivamente formulario1.php y visor1.php. En el
 			<input type="radio" value="mujer" for="sexo" name="sexo">Mujer</input>
 			<br>
 			<label id="idiomas">¿Qué idiomas hablas?<label><br>
-			<input type="checkbox" for="idiomas" value="español" name="idioma" checked>Español<br>
-			<input type="checkbox" for="idiomas" value="ingles" name="idioma">Inglés<br>
-			<input type="checkbox" for="idiomas" value="francés" name="idioma">Francés<br>
-			<input type="checkbox" for="idiomas" value="alemán" name="idioma">Alemán<br>
-			<input type="checkbox" for="idiomas" value="chino" name="idioma">Chino<br>
-			<input type="checkbox" for="idiomas" value="japonés" name="idioma">Japonés
+			<input type="checkbox" for="idiomas" value=" español" name="idiomaES" checked>Español<br>
+			<input type="checkbox" for="idiomas" value=" ingles" name="idiomaEN">Inglés<br>
+			<input type="checkbox" for="idiomas" value=" francés" name="idiomaFR">Francés<br>
+			<input type="checkbox" for="idiomas" value=" alemán" name="idiomaDE">Alemán<br>
+			<input type="checkbox" for="idiomas" value=" chino" name="idiomaCH">Chino<br>
+			<input type="checkbox" for="idiomas" value=" japonés" name="idiomaJP">Japonés
 			<br>
 			<label id="info">Más información</label>
 			<input type="textArea" for="info" name="informacion">

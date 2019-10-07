@@ -53,3 +53,9 @@ Los formularios envían una serie de datos en forma de array que se almacenan en
 $_GET[NOMBRECAMPO];
 $_POST[NOMBRECAMPO];
 ```
+
+## Inyección de código HTML y JavaScript
+Al imprimir el texto introducido en formularios desde un PHP se vulnera al servidor, permitiendo ejecutar sentencias PHP o JavaScript. Para evitar la inyección de texto PHP creó una función `htmlspecialchars()` que se encarga de devolver el texto escapado para que no se pueda ejecutar si es malicioso.
+```
+htmlspecialchars(TEXTO);
+```
