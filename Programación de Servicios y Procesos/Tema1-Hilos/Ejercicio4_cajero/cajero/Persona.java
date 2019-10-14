@@ -1,12 +1,12 @@
 package cajero;
 
-public class Persona extends Thread {
+public class Persona implements Runnable {
     public int efectivo = 0;
 
     @Override
     public void run() {
         for (int i = 0; i<4; i++) {
-            efectivo += CuentaBancaria.retirarDinero(10);
+            efectivo += Main.cuenta.retirarDinero(10);
         }
     }
 

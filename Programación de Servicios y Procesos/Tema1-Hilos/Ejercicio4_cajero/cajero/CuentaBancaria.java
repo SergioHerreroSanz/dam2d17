@@ -1,9 +1,9 @@
 package cajero;
 
 public class CuentaBancaria {
-    public int saldo = 100;
+    private int saldo = 100;
 
-    public int retirarDinero(int dineroSacar) {
+    public synchronized int retirarDinero(int dineroSacar) {
         if (saldo >= dineroSacar){
             try {
                 Thread.sleep(500);
@@ -12,6 +12,8 @@ public class CuentaBancaria {
             }
             saldo -= dineroSacar;
             return dineroSacar;
+        } else {
+            return 0;
         }
     }
 
