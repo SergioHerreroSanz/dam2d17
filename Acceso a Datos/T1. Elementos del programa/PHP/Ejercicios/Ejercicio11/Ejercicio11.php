@@ -3,23 +3,36 @@ Crea un documento con el e incluye en él un formulario que permita introducir v
 -->
 
 <html>
-	<head>
-		<title>Ejercicio11</title>
-	</head>
-	<body>
-		<form action="./Ejercicio11.php" method="POST">
-			<label id="num1">Primer número</label>
-			<input type="text" for="num1" name="num1">
-			<br>
-			<label id="num2">Segundo número</label>
-			<input type="text" for="num2" name="num2">
-			<br>
-			<input type="submit">
-		</form>
-		<hr>
-		<?php
-			echo $_POST["num1"];
-			echo $_POST["num2"];
-		?>
-	</body>
-</html>	
+
+<head>
+	<title>Ejercicio11</title>
+</head>
+
+<body>
+	<?php
+	if (!empty($_POST)) {
+		$suma = $_POST["num1"] + $_POST["num2"];
+		$resta = $_POST["num1"] - $_POST["num2"];
+		$multiplicacion = $_POST["num1"] * $_POST["num2"];
+		$division = $_POST["num1"] / $_POST["num2"];
+		$raro1 = ceil(sqrt($suma));
+		$raro2 = ceil(pow(pow($suma, 2), 1 / 5));
+
+		echo 'Suma: ' . $suma;
+		echo '<br>';
+		echo 'Resta: ' . $resta;
+		echo '<br>';
+		echo 'Multiplicación: ' . $multiplicacion;
+		echo '<br>';
+		echo 'División: ' . $division;
+		echo '<br>';
+		echo 'Suma de ambos números a la cuarta potencia: ' . $raro1;
+		echo '<br>';
+		echo 'Raíz quinta del cubo de la suma de ambos números: ' . $raro2;
+	} else {
+		include("form.php");
+	}
+	?>
+</body>
+
+</html>

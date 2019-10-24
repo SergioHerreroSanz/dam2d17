@@ -1,3 +1,0 @@
-<!--
-Crea un documento con el e incluye en él un formulario que permita introducir valores numéricos en dos campos de texto. Al enviarlo (puedes usar el mismo documento para el formulario y para la visualización de resultados) deberán aparecer los resultados de: sumar, restar, multiplicar y dividir ambos números. Deberá aparecer también el resultado (redondeado por exceso) de elevar la suma de ambos números a la cuarta potencia y la raíz quinta del cubo de la suma de ambos números.
--->
