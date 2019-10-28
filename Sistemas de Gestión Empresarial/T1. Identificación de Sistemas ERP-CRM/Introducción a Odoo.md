@@ -7,3 +7,5 @@
 * Venta: Entenderemos por venta cuando se haya facturado el producto vendido, pasa a formar parte del producto de la empresa.
 * Estado para facturar: Será una venta no efectuada pendiente de terminar.
 * Factura pro-forma: Documento acreditativo con el detalle de una factura (Invoice)
+* Cliente
+* Comercial
