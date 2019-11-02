@@ -1,5 +1,5 @@
 <!--
-Formulario con campos nombre y nota que al enviar añade en un archivo separados por `|`
+CRUD de una base de datos que lee un formulario con campos nombre y nota, se almacena con el formato nombre|nota
 -->
 
 
