@@ -27,7 +27,7 @@ CRUD de una base de datos mySQL que lee un formulario con campos nombre y nota
     if (!empty($_POST)) {
         include("funciones.php");
 
-        $con = mysqli_connect("localhost", "root", "", "dam2d");
+        $conData = array("localhost", "root", "", "dam2d");
         $nombre = $_POST["nombre"];
         $nota = $_POST["nota"];
         if ($nombre != "") {
@@ -44,7 +44,7 @@ CRUD de una base de datos mySQL que lee un formulario con campos nombre y nota
         switch ($_POST["accion"]) {
             case "alta":
                 if ($hayNombre && $hayNota) {
-                    $resultado = alta($con, $nombre, $nota);
+                    $resultado = alta($conData, $nombre, $nota);
                     if ($resultado) {
                         $aviso = $nombre . " con nota " . $nota . " dado de alta.";
                     } else {
@@ -57,7 +57,7 @@ CRUD de una base de datos mySQL que lee un formulario con campos nombre y nota
                 break;
             case "baja":
                 if ($hayNombre) {
-                    $resultado = baja($con, $nombre);
+                    $resultado = baja($conData, $nombre);
                     if ($resultado) {
                         $aviso = $nombre . " dado de baja.";
                     } else {
@@ -69,7 +69,7 @@ CRUD de una base de datos mySQL que lee un formulario con campos nombre y nota
                 echo $aviso;
                 break;
             case "mostrar":
-                $datos = mostrar($con);
+                $datos = mostrar($conData);
 
                 if ($datos) {
                     $aviso = "
@@ -95,7 +95,7 @@ CRUD de una base de datos mySQL que lee un formulario con campos nombre y nota
                 break;
             case "buscar":
                 if ($hayNombre) {
-                    $resultado = buscar($con, $nombre);
+                    $resultado = buscar($conData, $nombre);
                     if ($resultado[0]) {
                         $aviso = "La nota de " . $nombre . " es " . $resultado[1];
                     } else {
@@ -109,7 +109,7 @@ CRUD de una base de datos mySQL que lee un formulario con campos nombre y nota
             case "modificar":
 
                 if ($hayNombre && $hayNota) {
-                    $resultado = modificar($con, $nombre, $nota);
+                    $resultado = modificar($conData, $nombre, $nota);
                     if ($resultado) {
                         $aviso = $nombre . " con nota " . $nota . " modificado";
                     } else {

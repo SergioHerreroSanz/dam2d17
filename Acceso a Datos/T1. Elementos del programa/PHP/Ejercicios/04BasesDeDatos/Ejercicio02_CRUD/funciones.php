@@ -3,21 +3,26 @@ CRUD de una base de datos mySQL que lee un formulario con campos nombre y nota
 -->
 
 <?php
-function alta($con, $nombre, $nota)
+function alta($conData, $nombre, $nota)
 {
+    $con = mysqli_connect($conData[0],$conData[1],$conData[2],$conData[3]);
     $resultado = mysqli_query($con, "INSERT INTO alumnos (nombre, nota) VALUES ('" . $nombre . "', '" . $nota . "')");
     return $resultado;
 }
 
-function baja($con, $nombre)
+function baja($conData, $nombre)
 {
+    $con = mysqli_connect($conData[0],$conData[1],$conData[2],$conData[3]);
+    
     $resultado = mysqli_query($con, "DELETE FROM alumnos WHERE nombre='" . $nombre . "'");
 
     return $resultado;
 }
 
-function mostrar($con)
+function mostrar($conData)
 {
+    $con = mysqli_connect($conData[0],$conData[1],$conData[2],$conData[3]);
+
     $alumnos = mysqli_query($con, "SELECT * FROM alumnos");
     while ($alu = mysqli_fetch_assoc($alumnos)) {
         $resultado[] = array($alu["nombre"], $alu["nota"]);
@@ -25,8 +30,9 @@ function mostrar($con)
     return $resultado;
 }
 
-function buscar($con, $nombre)
+function buscar($conData, $nombre)
 {
+    $con = mysqli_connect($conData[0],$conData[1],$conData[2],$conData[3]);
     $nota = 0;
     $encontrado = false;
 
@@ -39,8 +45,9 @@ function buscar($con, $nombre)
     return array($encontrado, $nota);
 }
 
-function modificar($con, $nombre, $nota)
+function modificar($conData, $nombre, $nota)
 {
+    $con = mysqli_connect($conData[0],$conData[1],$conData[2],$conData[3]);
     $encontrado = false;
 
     $alumnos = mysqli_query($con, "SELECT * FROM alumnos WHERE nombre='" . $nombre . "'");
