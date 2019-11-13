@@ -22,13 +22,5 @@ public class Main {
         for (Thread hilo: hilos) {
             hilo.start();
         }
-
-        for (Thread hilo: hilos) {
-            try {
-                hilo.join();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
     }
 }

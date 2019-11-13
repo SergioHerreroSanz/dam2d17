@@ -10,6 +10,7 @@ public class Coche implements Runnable {
 
     @Override
     public void run() {
+        System.out.println("Coche "+id+" listo para aparcar");
         while(!aparcado) {
             aparcado = Main.parking.aparcar(id);
         }
