@@ -25,9 +25,9 @@ CRUD de una base de datos mySQL que lee un formulario con campos nombre y nota
     </form>
     <?php
     if (!empty($_POST)) {
+        require("conexion.php");
         include("funciones.php");
 
-        $conData = array("localhost", "root", "", "dam2d");
         $nombre = $_POST["nombre"];
         $nota = $_POST["nota"];
         if ($nombre != "") {

@@ -9,10 +9,15 @@ PHP es una variación de HTML que contiene etiquetas especiales interpretadas po
 ## Basics
 
 ### Escribir
-Para imprimir una cadena de texto o el contenido de una variable se usa la palabra `echo`.
+Para imprimir una cadena de texto o el contenido de una variable se usa la palabra `echo`, `print` o `print_r`.
 ```
 echo "TEXTO";
-echo var;
+echo VARIABLE;
+
+print "TEXTO";
+print(VARIABLE);
+
+print_r(VARIABLE);	//Este método imprime el contenido de valores complejos (objetos, arrays...)
 ```
 
 ### Comentarios
@@ -36,12 +41,19 @@ define(String nomVar, valor);
 define("edad", 19);
 ```
 
-
 ### Variables
 Las variables se definen con un operador de igual `=`. Por convención los nombres empiezan por `$`.
 ```
 $nombre = "Sergio"
 ```
+Comprobar el contenido:
+```
+isset($variable))		//Si está vacia la envia al servidor (no sabemos si el cliente la ha enviado vacia)
+empty($variable))		//Si está vacia no la envia al servidor (sabemos si el cliente la ha enviado vacia)
+```
+
+[Practicando con variables y sus ámbitos](https://80.26.155.59/cursos/cursoPHP5/php14.php)
+[Arrays bidimensionales](https://80.26.155.59/cursos/cursoPHP5/php27.php)
 
 ### Constantes de Sistema
 \_\_FILE__: Devuelve la ruta en la que se encuentra el archivo PHP desde el que se la llama.
@@ -54,6 +66,7 @@ Los formularios envían una serie de datos en forma de array que se almacenan en
 ```
 $_GET[NOMBRECAMPO];
 $_POST[NOMBRECAMPO];
+$_REQUEST[NOMBRECAMPO];	//Accede a los datos de $_GET y $_POST
 ```
 
 ### Inyección de código HTML y JavaScript
@@ -65,9 +78,31 @@ htmlspecialchars(TEXTO);
 ## Ficheros
 
 ## BD
+### Procedimental
 $con = mysqli_connect('url', 'user', 'password', 'db');		//abrir la conexión
 $alumnos = mysqli_query($con, 'sql');						//ejecutar la sentencia
 $alu = mysqli_fetch_assoc($alumnos);						//decuelve un cursor
 echo $alu['nombre'];										//recorrer el cursor
 
-###
+### PDO (PHP data object)
+
+#### Conexión: clase pdo
+```
+dsn= "mysql:host=localhost;dbname=dam2d"
+$con = new PDO(dsn, user, pass);
+
+//stuff
+
+$con -> close(); //o $con=null
+```
+#### Consulta:
+```
+$resultado = $con->query(sql) /devuelve un cursor/
+
+while($alumno=$result -> fetch()){
+	echo $alumno["nombre"];
+}
+
+```
+query para select y exec para delete update e insert
+
