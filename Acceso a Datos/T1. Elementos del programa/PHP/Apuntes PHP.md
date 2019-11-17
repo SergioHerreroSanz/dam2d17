@@ -215,63 +215,86 @@ echo $_SESSION["nombre"];
 [Sesiones II](https://80.26.155.59/cursos/cursoPHP5/php72.php)
 
 ## 4- BD
+
 ### 4.1- Procedimental
+
+#### Conexión
+Se debe definir la conexión a la base de datos y almacenarla en una variable que utilizaremos como parámetro para indicar sobre que base de datos se deben de ejecutar las instrucciones. para ello utilizamos la función `mysqli_connect()`.
 ```php
-$con = mysqli_connect('url', 'user', 'password', 'db');		//abrir la conexión
-$alumnos = mysqli_query($con, 'sql');						//ejecutar la sentencia
-$alu = mysqli_fetch_assoc($alumnos);						//decuelve un cursor
-echo $alu['nombre'];										//recorrer el cursor
+$url = "localhost";
+$user = "root";
+$password = "";
+$db = "alumnos";
+
+$con = mysqli_connect($url, $user, $password, $db);
+```
+
+#### Consulta
+Antes de realizar una consulta debemos definir en un string una sentencia SQL. Este string lo pasaremos como parámetro junto con la conexión a la función `mysqli_query()`, que devolverá `false` en caso de error o un objeto `mysqli_result` en el caso de las sentencias `SELECT`, `SHOW`, `DESCRIBE` o `EXPLAIN` satisfactorias. Para el resto de las sentencias devolverá `true`. Para acceder a los cursores almacenados en el objeto `mysqli_result` usaremos las funciones `mysqli_fetch_assoc()`, `mysqli_fetch_array()` o `mysqli_fetch_all()`, que devolverán un array asociativo, escalar o ambos.
+```php
+$alumnos = mysqli_query($con, "sql");
+while ($alu = mysqli_fetch_assoc($alumnos)) {		//Devuelve un cursor
+	echo $alu['nombre'] . " " . $alu['nota'];		//Muestra el cursor
+}
 ```
 
 ### 4.2- PDO (PHP data object)
 
-#### 4.2.1- Conexión:
+#### Conexión
+Definimos la conexión creando un objeto PDO. En su constructor indicamos la información de conexión, usuario y contraseña. La información de conexión deba estar estructurado de una forma concreta: `TIPO:host=URL;dbname=NOMBRE`.
 ```php
-dsn= "mysql:host=localhost;dbname=dam2d"
-$con = new PDO(dsn, user, pass);
+$dsn= "mysql:host=localhost;dbname=dam2d"
+$user = "root";
+$password = "";
 
-//stuff
-
-$con -> close(); //o $con=null
+$con = new PDO($dsn, $user, $password);
 ```
-#### 4.2.2- Consulta:
-```php
-$resultado = $con->query(sql) /devuelve un cursor/
 
-while($alumno=$result -> fetch()){
-	echo $alumno["nombre"];
+#### Consulta
+Se utiliza la función `query()` para obtener un objeto `PDOStatement` que utilizaremos para obtener cursores con la función `fetch`. Estos cursores serán tanto asociativos como escalares.
+```php
+$alumnos = $con->query("sql");
+while($alu=$alumnos->fetch()){					//Devuelve un cursor
+	echo $alu["nombre"] . " " . $alu["nota"];	//Muestra el cursor
 }
-
 ```
-query para select y exec para delete update e insert
+query para select y exec para delete, update e insert
 
-#### 4.2.3- Sentencias preparadas
+#### Sentencias preparadas
 ##### Crear
+Creamos la sentencia preparada con la función `prepare()`. La sentencia debe referir los valores que se introducirán posteriormente como texto que se buscará y sustituirá en el paso siguiente o sustituyéndolos por `?`.
 ```php
-$st = $con -> prepare("SQL" values(?,?))
-$st = $con -> prepare("SQL" values("nombre","nota"))
+$sql = "SELECT * FROM nombreTabla where id=?";	//Valores: "nombreTabla", ?
+$st = $con -> prepare($sql)
 ```
 
 ##### Enlazar
+Con la función `bindParam()` asignaremos los valores a la sentencia. en el primer parámetro introduciremos el nombre que hemos asignado al valor o la posición de `?` y en el segundo parámetro introduciremos el valor.
 ```php
-$st->bindParam(1,$nombre);
-$st->bindParam(1,$nota);
-$st->bindParam("nombre",$nombre);
-$st->bindParam("nota",$nota);
-
+$st->bindParam("nombreTabla", $nombre);
+$st->bindParam(1, $id);
 ```
 
 ##### Ejecutar
+Ejecutaremos la sentencia con el método `execute()`.
 ```php
 $st->execute();
 ```
 
 ##### Recorrer
+El método `fetch()` devuelve un cursor que será tanto asociativo como escalar, y el método `fetchAll()` devuelve un array que contiene todos los cursores.
 ```php
 while($fila= $st->fetch()){
-	echo $fila[nombre];
+	echo $fila["nombre"] . " " . $fila["nota"];
 }
 
-$st->fetchAll();	//devuelve un array doble
+$alumnos = $st->fetchAll();
+```
 
+#### Cerrar la conexión
+Se puede cerrar la conexión mediante el método `close()` o asignado la variable el valor `null`.
+```php
+$con->close();
+
+$con=null;
 ```
