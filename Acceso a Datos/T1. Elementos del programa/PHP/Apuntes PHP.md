@@ -15,7 +15,7 @@ echo $variable;
 
 print($variable);
 
-print_r($variable);	//Este método imprime el contenido de valores complejos (objetos, arrays...)
+print_r($variable);	//Imprime el contenido de elementos complejos (objetos, arrays)
 ```
 
 ### 1.2- Comentarios
@@ -45,14 +45,13 @@ Las variables se definen con un operador de igual `=`. Por convención los nombr
 $nombre = "Sergio";
 ```
 Para destruir una variable usamos la función `unset()`.
-```
+```php
 unset($nombre);
 ```
 Comprobar el contenido:
-```php
-isset($variable))		//Si está vacia la envia al servidor (no sabemos si el cliente la ha enviado vacia)
-empty($variable))		//Si está vacia no la envia al servidor (sabemos si el cliente la ha enviado vacia)
-```
+* `isset($variable)`: Si está vacía la envía al servidor (no sabemos si el cliente la ha enviado vacía)
+* `empty($variable)`: Si está vacía no la envía al servidor (sabemos si el cliente la ha enviado vacía)
+
 
 [Practicando con variables y sus ámbitos](https://80.26.155.59/cursos/cursoPHP5/php14.php)
 |
@@ -132,13 +131,13 @@ Existen los siguientes modos:
 </div>
 
 | Valor | Creado | Borrado | Lectura | Escritura | Puntero  |
-| :---: | :----: | :-----: | :-----: | :-------: | :------: |
-|   r   |        |         |    X    |           | Comienzo |
-|  r+   |        |         |    X    |     X     | Comienzo |
-|   w   |   X    |    X    |         |     X     | Comienzo |
-|  w+   |   X    |    X    |    X    |     X     | Comienzo |
-|   a   |   X    |         |         |     X     |  Final   |
-|  a+   |   X    |         |    X    |     X     |  Final   |
+| ----- | :----: | :-----: | :-----: | :-------: | :------: |
+| r     |        |         |    X    |           | Comienzo |
+| r+    |        |         |    X    |     X     | Comienzo |
+| w     |   X    |    X    |         |     X     | Comienzo |
+| w+    |   X    |    X    |    X    |     X     | Comienzo |
+| a     |   X    |         |         |     X     |  Final   |
+| a+    |   X    |         |    X    |     X     |  Final   |
 
 #### Manejar punteros
 * `feof($f1)`: Devuelve verdadero si se ha alcanzado el final.
@@ -250,6 +249,9 @@ $password = "";
 $con = new PDO($dsn, $user, $password);
 ```
 
+#### Manejo de errores
+//TODO
+
 #### Consulta
 Se utiliza la función `query()` para obtener un objeto `PDOStatement` que utilizaremos para obtener cursores con la función `fetch`. Estos cursores serán tanto asociativos como escalares.
 ```php
@@ -258,14 +260,14 @@ while($alu=$alumnos->fetch()){					//Devuelve un cursor
 	echo $alu["nombre"] . " " . $alu["nota"];	//Muestra el cursor
 }
 ```
-query para select y exec para delete, update e insert
+query para select y exec para delete, update e insert //TODO
 
 #### Sentencias preparadas
 ##### Crear
 Creamos la sentencia preparada con la función `prepare()`. La sentencia debe referir los valores que se introducirán posteriormente como texto que se buscará y sustituirá en el paso siguiente o sustituyéndolos por `?`.
 ```php
 $sql = "SELECT * FROM nombreTabla where id=?";	//Valores: "nombreTabla", ?
-$st = $con -> prepare($sql)
+$st = $con->prepare($sql)
 ```
 
 ##### Enlazar
