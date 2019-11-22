@@ -300,3 +300,19 @@ $con->close();
 
 $con=null;
 ```
+
+### Gestión de errores
+Excepciones:
+	e->getMessage()
+	e->errorInfo() == 1062
+
+if(!$rs) //no ha encontrado ningún registro
+$st->rowCount()	//devuelve el número de filas afectadas
+
+### 4.2- POO (PHP data object)
+
+id 				int AUTO_INCREMENT
+titulo 			varchar(30)
+precio 			decimal(5,2)
+fPub 			date
+disponible 		boolean
