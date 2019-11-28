@@ -3,7 +3,6 @@
 -->
 
 <?php
-
 function conexion()
 {
     try {
@@ -14,7 +13,6 @@ function conexion()
     }
     return $con;
 }
-
 
 function mostrar()
 {
@@ -62,7 +60,6 @@ function modificar($id, $nombre, $nota)
         $st = conexion()->prepare($sql);
         $st->bindParam(1, $nombre);
         $st->bindParam(2, $nota);
-        $st->bindParam(3, $id);
         return $st->execute();
     } catch (PDOException $e) {
         echo $e->getMessage();

@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <a href="Views/create.php">Nuevo</a><br />
+    <a href="Controllers/create.php">Nuevo</a><br/>
     <?php
 
     require("Models/funcions.php");
