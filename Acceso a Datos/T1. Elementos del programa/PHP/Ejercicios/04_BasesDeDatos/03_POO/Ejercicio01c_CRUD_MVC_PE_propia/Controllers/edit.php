@@ -1,9 +1,16 @@
 <?php
-include("../Views/create.php");
+require("../Models/funcions.php");
+
+$id = $_GET["id"];
+$rs = find($id);
+$titulo = $rs->titulo;
+$precio = $rs->precio;
+$fPub = $rs->fPub;
+$disponible = $rs->disponible;
+
+include("../Views/edit.php");
 
 if (!empty($_POST)) {
-    require("../Models/funcions.php");
-
     $titulo = $_POST["titulo"];
     $precio = $_POST["precio"];
     $fPub = $_POST["fPub"];
@@ -28,16 +35,11 @@ if (!empty($_POST)) {
     }
 
     if ($hayTitulo && $hayPrecio && $hayFPub) {
-        $resultado = create($titulo, $precio, $fPub, $disponible);
-        if ($resultado) {
-            $aviso = $titulo . " dado de alta.";
-            header("Location: ../index.php?aviso=" . $aviso);
-        } else {
-            $aviso = $titulo . " ya fue dado de alta.";
-        }
+        $resultado = update($id, $titulo, $precio, $fPub, $disponible);
+        $aviso = $titulo . " modificado";
+        header("Location: ../index.php?aviso=$aviso");
     } else {
-        $aviso = "Introduzca campos.";
+        echo "Introduzca campos";
     }
-    echo $aviso;
 }
 ?>

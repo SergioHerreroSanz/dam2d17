@@ -2,10 +2,6 @@
     CRUD de una base de datos mySQL que lee un formulario con campos nombre y nota usando PDO
 -->
 <?php
-$action = "";
-$aviso = "";
-$id = "";
-
 if (isset($_GET["action"])) {
     $action = $_GET["action"];
 }

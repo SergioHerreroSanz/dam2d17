@@ -6,11 +6,11 @@
 <html lang="en">
 
 <head>
-    <title>Ejercicio02</title>
+    <title>Ejercicio01</title>
 </head>
 
 <body>
-    <a href="Controllers/create.php">Nuevo</a><br/>
+    <a href="Views/create.php">Nuevo</a><br />
     <?php
 
     require("Models/funcions.php");

@@ -1,7 +1,10 @@
+<head>
+    <title>Ejercicio01</title>
+</head>
 <?php
 
 $action = "";
-if (isset($_GET["action"])){
+if (isset($_GET["action"])) {
     $action = $_GET["action"];
 }
 
@@ -31,9 +34,9 @@ switch ($action) {
         } else {
             echo "No hay datos" . "<br/>";
         }
+        
+        if (!empty($_GET["aviso"])) {
+            echo $_GET["aviso"];
+        }
         break;
-}
-
-if (!empty($_GET["aviso"])) {
-    echo $_GET["aviso"];
 }

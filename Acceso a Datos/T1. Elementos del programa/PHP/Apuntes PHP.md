@@ -250,7 +250,14 @@ $con = new PDO($dsn, $user, $password);
 ```
 
 #### Manejo de errores
-//TODO
+Al crear la conexión activamos el modo de errores con `PDO::ATTR_ERRMODE` y lo establecemos en modo excepción con `PDO::ERRMODE_EXCEPTION` en el método `setAttribute()`. Capturamos la excepción y obtenemos el código de error con la función `errorInfo()` y el mensaje con `getMessage()`.
+```php
+try{
+	$con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch(PDOEception $e){
+	echo "Error " . $e->errorInfo() . ": " . $e->getMessage();
+}
+```
 
 #### Consulta
 Se utiliza la función `query()` para obtener un objeto `PDOStatement` que utilizaremos para obtener cursores con la función `fetch`. Estos cursores serán tanto asociativos como escalares.
@@ -301,18 +308,15 @@ $con->close();
 $con=null;
 ```
 
-### Gestión de errores
-Excepciones:
-	e->getMessage()
-	e->errorInfo() == 1062
-
-if(!$rs) //no ha encontrado ningún registro
-$st->rowCount()	//devuelve el número de filas afectadas
-
 ### 4.2- POO (PHP data object)
-
-id 				int AUTO_INCREMENT
-titulo 			varchar(30)
-precio 			decimal(5,2)
-fPub 			date
-disponible 		boolean
+A partir de ahora accederemos a los valores de la base de datos mediante objetos. Para que una consulta nos devuelva un objeto en lugar de una array escalar o asociativo cambiaremos el argumento de la función `fetch()` (`PDO::FETCH_ASSOC`) por `PDO::FETCH_OBJ`.
+```php
+$st = $con->prepare($sql);
+$st->execute();
+$rs = $st->fetchAll(PDO::FETCH_OBJ);
+```
+Para acceder a los valores usaremos el operador flecha indicando el nombre del campo al que queremos acceder.
+```php
+$rs->nombre;	//Devuelve el valor nombre del registro
+$rs->nota;		//Devuelve el valor nota del registro
+```

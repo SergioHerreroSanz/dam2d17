@@ -6,7 +6,7 @@
 <html lang="en">
 
 <head>
-    <title>Ejercicio02</title>
+    <title>Ejercicio01</title>
 </head>
 
 <body>

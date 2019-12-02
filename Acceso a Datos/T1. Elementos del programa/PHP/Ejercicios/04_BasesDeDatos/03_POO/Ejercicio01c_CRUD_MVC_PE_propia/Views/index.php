@@ -21,10 +21,10 @@ foreach ($datos as $dato) {
     } else {
         echo "<td>No</td>";
     }  
-    $linkVer = "<a href='../index.php?action=show&id=" . $dato->id . "'>Ver</a>";
-    $linkEdit = "<a href='../index.php?action=edit&id=" . $dato->id . "'>Editar</a>";
-    $linkElim = "<a href='../index.php?action=destroy&id=" . $dato->id . "'>Eliminar</a>";
-    echo "<td>" . $linkVer . " " . $linkEdit . " " . $linkElim . "</td>";
+    $linkVer = "<a href='../index.php?action=show&id=$dato->id'>Ver</a>";
+    $linkEdit = "<a href='../index.php?action=edit&id=$dato->id'>Editar</a>";
+    $linkElim = "<a href='../index.php?action=destroy&id=$dato->id'>Eliminar</a>";
+    echo "<td>$linkVer $linkEdit $linkElim</td>";
     echo "</tr>";
 }
 echo "</table>";
