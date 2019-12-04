@@ -1,3 +1,48 @@
+- [PHP](#php)
+	- [1- Basics](#1--basics)
+		- [1.1- Escribir](#11--escribir)
+		- [1.2- Comentarios](#12--comentarios)
+		- [1.3- Concatenar](#13--concatenar)
+		- [1.4- Constantes](#14--constantes)
+		- [1.5- Variables](#15--variables)
+		- [1.6- Constantes de Sistema](#16--constantes-de-sistema)
+		- [1.7- Formularios](#17--formularios)
+		- [1.8- Inyección de código HTML y JavaScript](#18--inyecci%c3%b3n-de-c%c3%b3digo-html-y-javascript)
+		- [1.9- Recorrer arrays](#19--recorrer-arrays)
+		- [1.10- Formatos de fecha](#110--formatos-de-fecha)
+		- [1.11- Formatos de salida](#111--formatos-de-salida)
+	- [2- Ficheros](#2--ficheros)
+		- [2.1- Inclusión de ficheros](#21--inclusi%c3%b3n-de-ficheros)
+		- [2.2- Ficheros externos](#22--ficheros-externos)
+			- [Apertura](#apertura)
+			- [Manejar punteros](#manejar-punteros)
+			- [Lectura](#lectura)
+			- [Escritura](#escritura)
+			- [Otras funciones](#otras-funciones)
+	- [3- Cookies y sesiones](#3--cookies-y-sesiones)
+		- [3.1- Cookies](#31--cookies)
+			- [Enviar](#enviar)
+			- [Recibir](#recibir)
+		- [3.2- Sesiones](#32--sesiones)
+			- [Inicio de sesión y configuración](#inicio-de-sesi%c3%b3n-y-configuraci%c3%b3n)
+			- [Creación de variables](#creaci%c3%b3n-de-variables)
+			- [Recibir](#recibir-1)
+	- [4- BD](#4--bd)
+		- [4.1- Procedimental](#41--procedimental)
+			- [Conexión](#conexi%c3%b3n)
+			- [Consulta](#consulta)
+		- [4.2- PDO (PHP data object)](#42--pdo-php-data-object)
+			- [Conexión](#conexi%c3%b3n-1)
+			- [Manejo de errores](#manejo-de-errores)
+			- [Consulta](#consulta-1)
+			- [Sentencias preparadas](#sentencias-preparadas)
+				- [Crear](#crear)
+				- [Enlazar](#enlazar)
+				- [Ejecutar](#ejecutar)
+				- [Recorrer](#recorrer)
+			- [Cerrar la conexión](#cerrar-la-conexi%c3%b3n)
+		- [4.2- POO (PHP data object)](#42--poo-php-data-object)
+
 # PHP
 PHP es una variación de HTML que contiene etiquetas especiales interpretadas por el servidor. Así cuando se envía la información al cliente (navegador), este recibe una página web sin instancias PHP, en la que no queda rastro del código interpretado, como si se tratase de una página HTML normal. Si se intentase abrir un archivo PHP directamente desde el cliente, las instancias no se interpretarían y serian obviadas o mostradas como texto, pero serían visibles en el código fuente.
 ```php
@@ -35,7 +80,7 @@ echo 1,2,3,4,5;			//12345
 ### 1.4- Constantes
 Las constantes se definen con un método, asignando de golpe el nombre de la variable con su valor.
 ```php
-define("nombre", valor);
+define("nombre", "valor");
 ```
 [Constantes](https://80.26.155.59/cursos/cursoPHP5/php13.php)
 
@@ -166,7 +211,7 @@ $campos = explode($delimitador, $string);
 #### Otras funciones
 * `fclose($f1)`: Cierra el fichero.
 * `copy("rutaOriginal", "rutaCopia")`: Crea una copia de un fichero.
-* `rename("rutaOriginal, "rutNueva")`: Cambia el nombre del archivo y lo mueve si es necesario, si ya existe lo sobrescribe.
+* `rename("rutaOriginal", "rutNueva")`: Cambia el nombre del archivo y lo mueve si es necesario, si ya existe lo sobrescribe.
 
 [Todas las funciones](https://80.26.155.59/cursos/cursoPHP5/php55.php)
 

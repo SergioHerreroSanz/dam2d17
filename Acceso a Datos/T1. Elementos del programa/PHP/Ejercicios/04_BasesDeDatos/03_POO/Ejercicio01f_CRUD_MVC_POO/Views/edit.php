@@ -1,4 +1,4 @@
-<form method="POST" action="update.php">
+<form method="POST">
     <label id="titulo">Título</label>
     <input type="text" for="titulo" name="titulo" value="<?php echo $titulo ?>">
     <br>

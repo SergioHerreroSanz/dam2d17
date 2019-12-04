@@ -1,4 +1,4 @@
-<form method="POST" action="store.php">
+<form method="POST">
     <label id="titulo">Título</label>
     <input type="text" for="titulo" name="titulo">
     <br>
