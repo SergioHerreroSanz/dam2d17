@@ -1,2 +1,0 @@
-Reescribe el codigo fuente del ejercicio de los filósofos utilizando el objeto Lock
-y la función trylock. De tal forma que la lógica de negocio sea coger palillo izquierdo y luego derecho. Sin embargo, sino puedo coger el palillo derecho dejare el palillo izquierdo y volveré a intentarlo.

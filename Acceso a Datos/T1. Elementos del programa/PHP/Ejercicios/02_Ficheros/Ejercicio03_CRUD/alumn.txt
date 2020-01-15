@@ -1,4 +1,0 @@
-Pepe|6
-Juan|5
-Sergio|9
-Andy|8

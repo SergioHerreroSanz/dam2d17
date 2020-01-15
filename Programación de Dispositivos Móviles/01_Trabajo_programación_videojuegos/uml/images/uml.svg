@@ -1,0 +1,505 @@
+<svg id="mermaid-1579036068768" width="4305.96875" xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="-10 -10 2877.3125 483.6875"><style>
+
+
+
+#mermaid-1579036068768 .label {
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  color: #333; }
+
+#mermaid-1579036068768 .label text {
+  fill: #333; }
+
+#mermaid-1579036068768 .node rect,
+#mermaid-1579036068768 .node circle,
+#mermaid-1579036068768 .node ellipse,
+#mermaid-1579036068768 .node polygon,
+#mermaid-1579036068768 .node path {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1px; }
+
+#mermaid-1579036068768 .node .label {
+  text-align: center; }
+
+#mermaid-1579036068768 .node.clickable {
+  cursor: pointer; }
+
+#mermaid-1579036068768 .arrowheadPath {
+  fill: #333333; }
+
+#mermaid-1579036068768 .edgePath .path {
+  stroke: #333333;
+  stroke-width: 1.5px; }
+
+#mermaid-1579036068768 .edgeLabel {
+  background-color: #e8e8e8;
+  text-align: center; }
+
+#mermaid-1579036068768 .cluster rect {
+  fill: #ffffde;
+  stroke: #aaaa33;
+  stroke-width: 1px; }
+
+#mermaid-1579036068768 .cluster text {
+  fill: #333; }
+
+#mermaid-1579036068768 div.mermaidTooltip {
+  position: absolute;
+  text-align: center;
+  max-width: 200px;
+  padding: 2px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 12px;
+  background: #ffffde;
+  border: 1px solid #aaaa33;
+  border-radius: 2px;
+  pointer-events: none;
+  z-index: 100; }
+
+#mermaid-1579036068768 .actor {
+  stroke: #CCCCFF;
+  fill: #ECECFF; }
+
+#mermaid-1579036068768 text.actor {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1579036068768 .actor-line {
+  stroke: grey; }
+
+#mermaid-1579036068768 .messageLine0 {
+  stroke-width: 1.5;
+  stroke-dasharray: '2 2';
+  stroke: #333; }
+
+#mermaid-1579036068768 .messageLine1 {
+  stroke-width: 1.5;
+  stroke-dasharray: '2 2';
+  stroke: #333; }
+
+#mermaid-1579036068768 #arrowhead {
+  fill: #333; }
+
+#mermaid-1579036068768 .sequenceNumber {
+  fill: white; }
+
+#mermaid-1579036068768 #sequencenumber {
+  fill: #333; }
+
+#mermaid-1579036068768 #crosshead path {
+  fill: #333 !important;
+  stroke: #333 !important; }
+
+#mermaid-1579036068768 .messageText {
+  fill: #333;
+  stroke: none; }
+
+#mermaid-1579036068768 .labelBox {
+  stroke: #CCCCFF;
+  fill: #ECECFF; }
+
+#mermaid-1579036068768 .labelText {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1579036068768 .loopText {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1579036068768 .loopLine {
+  stroke-width: 2;
+  stroke-dasharray: '2 2';
+  stroke: #CCCCFF; }
+
+#mermaid-1579036068768 .note {
+  stroke: #aaaa33;
+  fill: #fff5ad; }
+
+#mermaid-1579036068768 .noteText {
+  fill: black;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 14px; }
+
+#mermaid-1579036068768 .activation0 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+#mermaid-1579036068768 .activation1 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+#mermaid-1579036068768 .activation2 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+
+#mermaid-1579036068768 .mermaid-main-font {
+  font-family: "trebuchet ms", verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1579036068768 .section {
+  stroke: none;
+  opacity: 0.2; }
+
+#mermaid-1579036068768 .section0 {
+  fill: rgba(102, 102, 255, 0.49); }
+
+#mermaid-1579036068768 .section2 {
+  fill: #fff400; }
+
+#mermaid-1579036068768 .section1,
+#mermaid-1579036068768 .section3 {
+  fill: white;
+  opacity: 0.2; }
+
+#mermaid-1579036068768 .sectionTitle0 {
+  fill: #333; }
+
+#mermaid-1579036068768 .sectionTitle1 {
+  fill: #333; }
+
+#mermaid-1579036068768 .sectionTitle2 {
+  fill: #333; }
+
+#mermaid-1579036068768 .sectionTitle3 {
+  fill: #333; }
+
+#mermaid-1579036068768 .sectionTitle {
+  text-anchor: start;
+  font-size: 11px;
+  text-height: 14px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+
+#mermaid-1579036068768 .grid .tick {
+  stroke: lightgrey;
+  opacity: 0.8;
+  shape-rendering: crispEdges; }
+#mermaid-1579036068768   .grid .tick text {
+    font-family: 'trebuchet ms', verdana, arial;
+    font-family: var(--mermaid-font-family); }
+
+#mermaid-1579036068768 .grid path {
+  stroke-width: 0; }
+
+
+#mermaid-1579036068768 .today {
+  fill: none;
+  stroke: red;
+  stroke-width: 2px; }
+
+
+
+#mermaid-1579036068768 .task {
+  stroke-width: 2; }
+
+#mermaid-1579036068768 .taskText {
+  text-anchor: middle;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1579036068768 .taskText:not([font-size]) {
+  font-size: 11px; }
+
+#mermaid-1579036068768 .taskTextOutsideRight {
+  fill: black;
+  text-anchor: start;
+  font-size: 11px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1579036068768 .taskTextOutsideLeft {
+  fill: black;
+  text-anchor: end;
+  font-size: 11px; }
+
+
+#mermaid-1579036068768 .task.clickable {
+  cursor: pointer; }
+
+#mermaid-1579036068768 .taskText.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+#mermaid-1579036068768 .taskTextOutsideLeft.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+#mermaid-1579036068768 .taskTextOutsideRight.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+
+#mermaid-1579036068768 .taskText0,
+#mermaid-1579036068768 .taskText1,
+#mermaid-1579036068768 .taskText2,
+#mermaid-1579036068768 .taskText3 {
+  fill: white; }
+
+#mermaid-1579036068768 .task0,
+#mermaid-1579036068768 .task1,
+#mermaid-1579036068768 .task2,
+#mermaid-1579036068768 .task3 {
+  fill: #8a90dd;
+  stroke: #534fbc; }
+
+#mermaid-1579036068768 .taskTextOutside0,
+#mermaid-1579036068768 .taskTextOutside2 {
+  fill: black; }
+
+#mermaid-1579036068768 .taskTextOutside1,
+#mermaid-1579036068768 .taskTextOutside3 {
+  fill: black; }
+
+
+#mermaid-1579036068768 .active0,
+#mermaid-1579036068768 .active1,
+#mermaid-1579036068768 .active2,
+#mermaid-1579036068768 .active3 {
+  fill: #bfc7ff;
+  stroke: #534fbc; }
+
+#mermaid-1579036068768 .activeText0,
+#mermaid-1579036068768 .activeText1,
+#mermaid-1579036068768 .activeText2,
+#mermaid-1579036068768 .activeText3 {
+  fill: black !important; }
+
+
+#mermaid-1579036068768 .done0,
+#mermaid-1579036068768 .done1,
+#mermaid-1579036068768 .done2,
+#mermaid-1579036068768 .done3 {
+  stroke: grey;
+  fill: lightgrey;
+  stroke-width: 2; }
+
+#mermaid-1579036068768 .doneText0,
+#mermaid-1579036068768 .doneText1,
+#mermaid-1579036068768 .doneText2,
+#mermaid-1579036068768 .doneText3 {
+  fill: black !important; }
+
+
+#mermaid-1579036068768 .crit0,
+#mermaid-1579036068768 .crit1,
+#mermaid-1579036068768 .crit2,
+#mermaid-1579036068768 .crit3 {
+  stroke: #ff8888;
+  fill: red;
+  stroke-width: 2; }
+
+#mermaid-1579036068768 .activeCrit0,
+#mermaid-1579036068768 .activeCrit1,
+#mermaid-1579036068768 .activeCrit2,
+#mermaid-1579036068768 .activeCrit3 {
+  stroke: #ff8888;
+  fill: #bfc7ff;
+  stroke-width: 2; }
+
+#mermaid-1579036068768 .doneCrit0,
+#mermaid-1579036068768 .doneCrit1,
+#mermaid-1579036068768 .doneCrit2,
+#mermaid-1579036068768 .doneCrit3 {
+  stroke: #ff8888;
+  fill: lightgrey;
+  stroke-width: 2;
+  cursor: pointer;
+  shape-rendering: crispEdges; }
+
+#mermaid-1579036068768 .milestone {
+  transform: rotate(45deg) scale(0.8, 0.8); }
+
+#mermaid-1579036068768 .milestoneText {
+  font-style: italic; }
+
+#mermaid-1579036068768 .doneCritText0,
+#mermaid-1579036068768 .doneCritText1,
+#mermaid-1579036068768 .doneCritText2,
+#mermaid-1579036068768 .doneCritText3 {
+  fill: black !important; }
+
+#mermaid-1579036068768 .activeCritText0,
+#mermaid-1579036068768 .activeCritText1,
+#mermaid-1579036068768 .activeCritText2,
+#mermaid-1579036068768 .activeCritText3 {
+  fill: black !important; }
+
+#mermaid-1579036068768 .titleText {
+  text-anchor: middle;
+  font-size: 18px;
+  fill: black;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1579036068768 g.classGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 10px; }
+#mermaid-1579036068768   g.classGroup text .title {
+    font-weight: bolder; }
+
+#mermaid-1579036068768 g.clickable {
+  cursor: pointer; }
+
+#mermaid-1579036068768 g.classGroup rect {
+  fill: #ECECFF;
+  stroke: #9370DB; }
+
+#mermaid-1579036068768 g.classGroup line {
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1579036068768 .classLabel .box {
+  stroke: none;
+  stroke-width: 0;
+  fill: #ECECFF;
+  opacity: 0.5; }
+
+#mermaid-1579036068768 .classLabel .label {
+  fill: #9370DB;
+  font-size: 10px; }
+
+#mermaid-1579036068768 .relation {
+  stroke: #9370DB;
+  stroke-width: 1;
+  fill: none; }
+
+#mermaid-1579036068768 .dashed-line {
+  stroke-dasharray: 3; }
+
+#mermaid-1579036068768 #compositionStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1579036068768 #compositionEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1579036068768 #aggregationStart {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1579036068768 #aggregationEnd {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1579036068768 #dependencyStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1579036068768 #dependencyEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1579036068768 #extensionStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1579036068768 #extensionEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1579036068768 .commit-id,
+#mermaid-1579036068768 .commit-msg,
+#mermaid-1579036068768 .branch-label {
+  fill: lightgrey;
+  color: lightgrey;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1579036068768 .pieTitleText {
+  text-anchor: middle;
+  font-size: 25px;
+  fill: black;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1579036068768 .slice {
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1579036068768 g.stateGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-size: 10px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1579036068768 g.stateGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-size: 10px; }
+
+#mermaid-1579036068768 g.stateGroup .state-title {
+  font-weight: bolder;
+  fill: black; }
+
+#mermaid-1579036068768 g.stateGroup rect {
+  fill: #ECECFF;
+  stroke: #9370DB; }
+
+#mermaid-1579036068768 g.stateGroup line {
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1579036068768 .transition {
+  stroke: #9370DB;
+  stroke-width: 1;
+  fill: none; }
+
+#mermaid-1579036068768 .stateGroup .composit {
+  fill: white;
+  border-bottom: 1px; }
+
+#mermaid-1579036068768 .stateGroup .alt-composit {
+  fill: #e0e0e0;
+  border-bottom: 1px; }
+
+#mermaid-1579036068768 .state-note {
+  stroke: #aaaa33;
+  fill: #fff5ad; }
+#mermaid-1579036068768   .state-note text {
+    fill: black;
+    stroke: none;
+    font-size: 10px; }
+
+#mermaid-1579036068768 .stateLabel .box {
+  stroke: none;
+  stroke-width: 0;
+  fill: #ECECFF;
+  opacity: 0.5; }
+
+#mermaid-1579036068768 .stateLabel text {
+  fill: black;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+:root {
+  --mermaid-font-family: '"trebuchet ms", verdana, arial';
+  --mermaid-font-family: "Comic Sans MS", "Comic Sans", cursive; }
+
+:root { --mermaid-font-family: "trebuchet ms", verdana, arial;}</style><style>#mermaid-1579036068768 {
+    color: rgb(0, 0, 0);
+    font: normal normal 400 normal 16px / normal "trebuchet ms", verdana, arial;
+  }</style><g></g><defs><marker id="extensionStart" class="extension" refX="0" refY="7" markerWidth="190" markerHeight="240" orient="auto"><path d="M 1,7 L18,13 V 1 Z"></path></marker></defs><defs><marker id="extensionEnd" refX="19" refY="7" markerWidth="20" markerHeight="28" orient="auto"><path d="M 1,1 V 13 L18,7 Z"></path></marker></defs><defs><marker id="compositionStart" class="extension" refX="0" refY="7" markerWidth="190" markerHeight="240" orient="auto"><path d="M 18,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="compositionEnd" refX="19" refY="7" markerWidth="20" markerHeight="28" orient="auto"><path d="M 18,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="aggregationStart" class="extension" refX="0" refY="7" markerWidth="190" markerHeight="240" orient="auto"><path d="M 18,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="aggregationEnd" refX="19" refY="7" markerWidth="20" markerHeight="28" orient="auto"><path d="M 18,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="dependencyStart" class="extension" refX="0" refY="7" markerWidth="190" markerHeight="240" orient="auto"><path d="M 5,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="dependencyEnd" refX="19" refY="7" markerWidth="20" markerHeight="28" orient="auto"><path d="M 18,7 L9,13 L14,7 L9,1 Z"></path></marker></defs><g id="classid-FreeCameraController-338" class="classGroup " transform="translate(0,120 )"><rect x="0" y="0" width="139.46875" height="91.84375"></rect><text y="15" x="0"><tspan class="title" x="17.3828125">FreeCameraController</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="139.46875"></line><text x="5" y="32.015625" fill="white" class="classText"><tspan x="5">- float smoothTime</tspan><tspan x="5" dy="10">- Transform ObjectToFollow</tspan><tspan x="5" dy="10">- Vector2 velocity</tspan></text><line x1="0" y1="59.03125" y2="59.03125" x2="139.46875"></line><text x="5" y="74.03125" fill="white" class="classText"><tspan x="5">~ Start()</tspan><tspan x="5" dy="10">~ FixedUpdate()</tspan></text></g><g id="classid-ConstrainedCameraController-339" class="classGroup " transform="translate(189.46875,110 )"><rect x="0" y="0" width="148.78125" height="111.84375"></rect><text y="15" x="0"><tspan class="title" x="5">ConstrainedCameraController</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="148.78125"></line><text x="5" y="32.015625" fill="white" class="classText"><tspan x="5">- Vector2 minPosition</tspan><tspan x="5" dy="10">- Vector2 maxPosition</tspan><tspan x="5" dy="10">- float smoothTime</tspan><tspan x="5" dy="10">- Transform ObjectToFollow</tspan><tspan x="5" dy="10">- Vector2 velocity</tspan></text><line x1="0" y1="79.03125" y2="79.03125" x2="148.78125"></line><text x="5" y="94.03125" fill="white" class="classText"><tspan x="5">~ Start()</tspan><tspan x="5" dy="10">~ FixedUpdate()</tspan></text></g><g id="classid-PlayerIdleController-340" class="classGroup " transform="translate(388.25,135 )"><rect x="0" y="0" width="104.8125" height="61.84375"></rect><text y="15" x="0"><tspan class="title" x="5">PlayerIdleController</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="104.8125"></line><text x="5" y="32.015625" fill="white" class="classText"><tspan x="5">- Animator anim</tspan></text><line x1="0" y1="39.03125" y2="39.03125" x2="104.8125"></line><text x="5" y="54.03125" fill="white" class="classText"><tspan x="5">~ Start()</tspan></text></g><g id="classid-PlayerController-341" class="classGroup " transform="translate(543.0625,0 )"><rect x="0" y="0" width="116.46875" height="331.84375"></rect><text y="15" x="0"><tspan class="title" x="19.46875">PlayerController</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="116.46875"></line><text x="5" y="32.015625" fill="white" class="classText"><tspan x="5">+ int lives</tspan><tspan x="5" dy="10">- Vector3 spawn</tspan><tspan x="5" dy="10">- float maxSpeed</tspan><tspan x="5" dy="10">- float speed</tspan><tspan x="5" dy="10">- float jumpPower</tspan><tspan x="5" dy="10">- float inmuneTime</tspan><tspan x="5" dy="10">- float jumpNumber</tspan><tspan x="5" dy="10">- GameObject weapon</tspan><tspan x="5" dy="10">- Rigidbody2D rb2d</tspan><tspan x="5" dy="10">- Animator anim</tspan><tspan x="5" dy="10">- SpriteRenderer spr</tspan><tspan x="5" dy="10">- Collider2D coll</tspan><tspan x="5" dy="10">- bool inmune</tspan><tspan x="5" dy="10">- bool grounded</tspan><tspan x="5" dy="10">- bool attack</tspan><tspan x="5" dy="10">- int jumps</tspan><tspan x="5" dy="10">- bool unlocked</tspan></text><line x1="0" y1="199.03125" y2="199.03125" x2="116.46875"></line><text x="5" y="214.03125" fill="white" class="classText"><tspan x="5">~ Start()</tspan><tspan x="5" dy="10">~ Update()</tspan><tspan x="5" dy="10">~ FixedUpdate()</tspan><tspan x="5" dy="10">~ OnTriggerEnter2D()</tspan><tspan x="5" dy="10">~ OnCollisionEnter2D()</tspan><tspan x="5" dy="10">~ OnCollisionStay2D()</tspan><tspan x="5" dy="10">~ OnCollisionExit2D()</tspan><tspan x="5" dy="10">+ ResetPosition()</tspan><tspan x="5" dy="10">~ OnBecameInvisible()</tspan><tspan x="5" dy="10">~ Jump()</tspan><tspan x="5" dy="10">- Attack()</tspan><tspan x="5" dy="10">~ Harm(float time)</tspan></text></g><g id="classid-PressButtonEventController-342" class="classGroup " transform="translate(709.53125,120 )"><rect x="0" y="0" width="194.09375" height="91.84375"></rect><text y="15" x="0"><tspan class="title" x="31.8125">PressButtonEventController</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="194.09375"></line><text x="5" y="32.015625" fill="white" class="classText"><tspan x="5">- NextLevelController parent</tspan><tspan x="5" dy="10">- GameObject released</tspan><tspan x="5" dy="10">- GameObject pressed</tspan></text><line x1="0" y1="59.03125" y2="59.03125" x2="194.09375"></line><text x="5" y="74.03125" fill="white" class="classText"><tspan x="5">- Start()</tspan><tspan x="5" dy="10">- OnTriggerEnter2D(Collider2D collision)</tspan></text></g><g id="classid-NextLevelController-343" class="classGroup " transform="translate(861.9765625,381.84375 )"><rect x="0" y="0" width="138.203125" height="81.84375"></rect><text y="15" x="0"><tspan class="title" x="21.5078125">NextLevelController</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="138.203125"></line><text x="5" y="32.015625" fill="white" class="classText"><tspan x="5">- GameObject LockeDoor</tspan><tspan x="5" dy="10">- GameObject UnlockeDoor</tspan></text><line x1="0" y1="49.03125" y2="49.03125" x2="138.203125"></line><text x="5" y="64.03125" fill="white" class="classText"><tspan x="5">+ Start()</tspan><tspan x="5" dy="10">+ UnlockDoor()</tspan></text></g><g id="classid-NextLevelToggle-344" class="classGroup " transform="translate(953.625,126.0078125 )"><rect x="0" y="0" width="203.90625" height="79.828125"></rect><text y="15" x="0"><tspan class="title" x="63.4375">NextLevelToggle</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="203.90625"></line><text x="5" y="32.015625" fill="white" class="classText"></text><line x1="0" y1="27.015625" y2="27.015625" x2="203.90625"></line><text x="5" y="42.015625" fill="white" class="classText"><tspan x="5">- OnTriggerStay2D(Collider2D collision)</tspan><tspan x="5" dy="10">- OnTriggerEnter2D(Collider2D collision)</tspan><tspan x="5" dy="10">- OnCollisionEnter2D(Collision2D collision)</tspan><tspan x="5" dy="10">- OnBecameInvisible()</tspan></text></g><g id="classid-EnemyXController-345" class="classGroup " transform="translate(1207.53125,85 )"><rect x="0" y="0" width="165.546875" height="161.84375"></rect><text y="15" x="0"><tspan class="title" x="40.1171875">EnemyXController</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="165.546875"></line><text x="5" y="32.015625" fill="white" class="classText"><tspan x="5">- float speed</tspan><tspan x="5" dy="10">- Vector2 minPos</tspan><tspan x="5" dy="10">- Vector2 maxPos</tspan><tspan x="5" dy="10">- float deadTime</tspan><tspan x="5" dy="10">- Rigidbody2D rb2d</tspan><tspan x="5" dy="10">- Animator anim</tspan><tspan x="5" dy="10">- bool isAlive</tspan></text><line x1="0" y1="99.03125" y2="99.03125" x2="165.546875"></line><text x="5" y="114.03125" fill="white" class="classText"><tspan x="5">~ Start()</tspan><tspan x="5" dy="10">~ Update()</tspan><tspan x="5" dy="10">~ FixedUpdate()</tspan><tspan x="5" dy="10">- OnTrigerEnter2D(Collider2D col)</tspan><tspan x="5" dy="10">~ Resurrect(float time)</tspan></text></g><g id="classid-FallingGroundController-346" class="classGroup " transform="translate(1423.078125,95 )"><rect x="0" y="0" width="247.109375" height="141.84375"></rect><text y="15" x="0"><tspan class="title" x="67.15625">FallingGroundController</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="247.109375"></line><text x="5" y="32.015625" fill="white" class="classText"><tspan x="5">- FallingCascadeController fallingCascadeController</tspan><tspan x="5" dy="10">+ float fallTime</tspan><tspan x="5" dy="10">- int id</tspan><tspan x="5" dy="10">- Rigidbody2D rb2d</tspan><tspan x="5" dy="10">- bool firstCollision</tspan></text><line x1="0" y1="79.03125" y2="79.03125" x2="247.109375"></line><text x="5" y="94.03125" fill="white" class="classText"><tspan x="5">+ setId(int id)</tspan><tspan x="5" dy="10">- Start()</tspan><tspan x="5" dy="10">- OnCollisionEnter2D(Collision2D collision)</tspan><tspan x="5" dy="10">+ ForceFall(float time)</tspan><tspan x="5" dy="10">- Fall(float time)</tspan></text></g><g id="classid-FallingCascadeController-347" class="classGroup " transform="translate(1421.46875,386.84375 )"><rect x="0" y="0" width="250.328125" height="71.84375"></rect><text y="15" x="0"><tspan class="title" x="67.0234375">FallingCascadeController</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="250.328125"></line><text x="5" y="32.015625" fill="white" class="classText"><tspan x="5">- FallingGroundController[] fallingGroundControllers</tspan></text><line x1="0" y1="39.03125" y2="39.03125" x2="250.328125"></line><text x="5" y="54.03125" fill="white" class="classText"><tspan x="5">- Start()</tspan><tspan x="5" dy="10">+ WarnNeighbour(int i)</tspan></text></g><g id="classid-GameManager-348" class="classGroup " transform="translate(1720.1875,120 )"><rect x="0" y="0" width="203.359375" height="91.84375"></rect><text y="15" x="0"><tspan class="title" x="68.6953125">GameManager</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="203.359375"></line><text x="5" y="32.015625" fill="white" class="classText"><tspan x="5">- GameObject playerObject</tspan><tspan x="5" dy="10">- GameObject audioObject</tspan><tspan x="5" dy="10">- GameObject canvasObject</tspan></text><line x1="0" y1="59.03125" y2="59.03125" x2="203.359375"></line><text x="5" y="74.03125" fill="white" class="classText"><tspan x="5">~ Start()</tspan><tspan x="5" dy="10">+ Excepciones(Scene current, Scene next)</tspan></text></g><g id="classid-MainMenuController-349" class="classGroup " transform="translate(1973.546875,126.0078125 )"><rect x="0" y="0" width="104.703125" height="79.828125"></rect><text y="15" x="0"><tspan class="title" x="5">MainMenuController</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="104.703125"></line><text x="5" y="32.015625" fill="white" class="classText"></text><line x1="0" y1="27.015625" y2="27.015625" x2="104.703125"></line><text x="5" y="42.015625" fill="white" class="classText"><tspan x="5">+ Start()</tspan><tspan x="5" dy="10">+ onPlayClick()</tspan><tspan x="5" dy="10">+ onRunnerClick()</tspan><tspan x="5" dy="10">+ onQuitClick()</tspan></text></g><g id="classid-RunningMenuController-350" class="classGroup " transform="translate(2128.25,90 )"><rect x="0" y="0" width="130.234375" height="151.84375"></rect><text y="15" x="0"><tspan class="title" x="9.734375">RunningMenuController</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="130.234375"></line><text x="5" y="32.015625" fill="white" class="classText"><tspan x="5">- GameObject pauseMenu</tspan><tspan x="5" dy="10">- float lives</tspan><tspan x="5" dy="10">- bool show</tspan></text><line x1="0" y1="59.03125" y2="59.03125" x2="130.234375"></line><text x="5" y="74.03125" fill="white" class="classText"><tspan x="5">~ Update()</tspan><tspan x="5" dy="10">- OnDestroy()</tspan><tspan x="5" dy="10">+ onRestartClick()</tspan><tspan x="5" dy="10">+ onReturnMenuClick()</tspan><tspan x="5" dy="10">+ onQuitClick()</tspan><tspan x="5" dy="10">+ onSoundToggle()</tspan><tspan x="5" dy="10">+ Pause()</tspan><tspan x="5" dy="10">+ Resume()</tspan></text></g><g id="classid-LivesController-351" class="classGroup " transform="translate(2308.484375,120 )"><rect x="0" y="0" width="142.0625" height="91.84375"></rect><text y="15" x="0"><tspan class="title" x="35.09375">LivesController</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="142.0625"></line><text x="5" y="32.015625" fill="white" class="classText"><tspan x="5">- int lives</tspan><tspan x="5" dy="10">- TextMeshProUGUI livestext</tspan><tspan x="5" dy="10">- PlayerController player</tspan></text><line x1="0" y1="59.03125" y2="59.03125" x2="142.0625"></line><text x="5" y="74.03125" fill="white" class="classText"><tspan x="5">~ Start()</tspan><tspan x="5" dy="10">~ FixedUpdate()</tspan></text></g><g id="classid-ScoreController-352" class="classGroup " transform="translate(2500.546875,115 )"><rect x="0" y="0" width="142.4375" height="101.84375"></rect><text y="15" x="0"><tspan class="title" x="34.25">ScoreController</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="142.4375"></line><text x="5" y="32.015625" fill="white" class="classText"><tspan x="5">+ int time</tspan><tspan x="5" dy="10">+ int score</tspan><tspan x="5" dy="10">- TextMeshProUGUI timetext</tspan></text><line x1="0" y1="59.03125" y2="59.03125" x2="142.4375"></line><text x="5" y="74.03125" fill="white" class="classText"><tspan x="5">~ Start()</tspan><tspan x="5" dy="10">+ SaveScore()</tspan><tspan x="5" dy="10">~ ReduceScore()</tspan></text></g><g id="classid-GameOverController-353" class="classGroup " transform="translate(2692.984375,120 )"><rect x="0" y="0" width="164.328125" height="91.84375"></rect><text y="15" x="0"><tspan class="title" x="33.796875">GameOverController</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="164.328125"></line><text x="5" y="32.015625" fill="white" class="classText"><tspan x="5">- GameObject scoreObject</tspan><tspan x="5" dy="10">- GameObject livesObject</tspan><tspan x="5" dy="10">- ScoreController scoreController</tspan><tspan x="5" dy="10">- TextMeshProUGUI text</tspan></text><line x1="0" y1="69.03125" y2="69.03125" x2="164.328125"></line><text x="5" y="84.03125" fill="white" class="classText"><tspan x="5">~ Start()</tspan></text></g><path d="M806.578125,211.84375L806.578125,236.01041666666666C806.578125,260.1770833333333,806.578125,308.5104166666667,815.8111979166666,337.5659305516336C825.0442708333334,366.62144443660054,843.5104166666666,376.39913887320114,852.7434895833334,381.2879860915014L861.9765625,386.17683330980174" id="edge14" class="relation" marker-end="url(#compositionEnd)"></path><g class="cardinality"><text class="type1" x="801.578125" y="224.34375" fill="black" font-size="6">1</text></g><g class="cardinality"><text class="type2" x="855.6090222856202" y="371.48995373590117" fill="black" font-size="6">1</text></g><path d="M1055.578125,205.8359375L1055.578125,231.00390625C1055.578125,256.171875,1055.578125,306.5078125,1046.3450520833333,336.56462846830027C1037.1119791666667,366.62144443660054,1018.6458333333334,376.39913887320114,1009.4127604166666,381.2879860915014L1000.1796875,386.17683330980174" id="edge15" class="relation" marker-end="url(#compositionEnd)"></path><g class="cardinality"><text class="type1" x="1050.578125" y="218.3359375" fill="black" font-size="6">1</text></g><g class="cardinality"><text class="type2" x="1015.906103228913" y="389.1651184905355" fill="black" font-size="6">1</text></g><path d="M1546.6328125,236.84375L1546.6328125,256.84375C1546.6328125,276.84375,1546.6328125,316.84375,1546.6328125,341.84375C1546.6328125,366.84375,1546.6328125,376.84375,1546.6328125,381.84375L1546.6328125,386.84375" id="edge16" class="relation" marker-start="url(#compositionStart)"></path><g class="cardinality"><text class="type1" x="1536.6328125" y="249.34375" fill="black" font-size="6">n</text></g><g class="cardinality"><text class="type2" x="1551.6328125" y="374.34375" fill="black" font-size="6">1</text></g></svg>

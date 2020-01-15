@@ -1,9 +1,0 @@
-A continuación os propongo el siguiente ejercicio. La idea es respetar todo lo posible el enunciado.
-
-En esta simulación intervienen clientes que quieren ir a comer sopa a un restaurante. Dejo en vuestra mano que los clientes aparezcan de golpe o cada cierto tiempo aleatorio. Todos los clientes acabarán comiendo sopa aunque tengan que esperar. Una vez que comen se van y no vuelven.
-
-El cocinero de Sopa solo tiene 4 cuentos de sopa, y su método de trabajo es el siguiente. Cocina 4 cuencos de sopa y se va a dormir. Cuando se acaba el ultimo cuenco de sopa, este cliente despierta al cocinero, prepara de nuevo 4 cuencos (mientras los clientes esperan), y se vuelve a dormir.
-
-A través de constantes al principio del ejercicio permitir la configuración del ejercicio. Como por ejemplo, el numero de clientes de la simulación, y el numero de cuencos que dispone el cocinero.
-
-Tened en cuenta que el cocinero tarda unos 4 segundos en preparar los 4 platos de sopa, y los clientes tardan 1,5 segundos en comérselo.
