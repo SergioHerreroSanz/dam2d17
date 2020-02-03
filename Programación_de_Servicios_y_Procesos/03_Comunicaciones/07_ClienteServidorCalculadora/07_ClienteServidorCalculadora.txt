@@ -1,0 +1,8 @@
+Desarrollar un cliente y un servidor. Cada uno tendréis que definir la forma en que interactua el cliente y el servidor.
+
+La calculadora necesita 2 números y que operación quieres realizar (suma, resta, multiplicacion y division).
+
+El diseño de como interactua el cliente y el servidor requiere una pequeña reflexión sobre los protocolos de comunicación y como distintos clientes son capaces de interactuar con distintos servidores.
+
+El servidor tiene que estar siempre activo para poder responder a un cliente.
+El servidor tendrá que poder responder a varios clientes de forma simultanea.

@@ -1,0 +1,1 @@
+Un Servidor de Chat Multicliente, que identifica a los usuarios por un nombre, lo que escriba un usuario al chat lo tienen que recibir todos los demas, y "lo de leer y escribir con hilos"

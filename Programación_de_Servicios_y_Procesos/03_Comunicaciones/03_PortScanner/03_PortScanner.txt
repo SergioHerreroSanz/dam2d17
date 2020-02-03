@@ -1,0 +1,4 @@
+Utilizando la clase socket escanea tu dirección IP en busca de puertos que tengáis abiertos.
+Necesitareis utilizar el socket timeout establecer un tiempo de conexión, y en caso de que no hubieras podido conectarse para un determinado tiempo daremos el puerto por cerrado.
+
+Puedes ejecutar algun servicio del XAMPP para abrir puertos como 80 de HTTP (Apache), el 3306 de MySQL, etc.

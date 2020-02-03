@@ -1,0 +1,6 @@
+Tareas a realizar:
+- Nos conectamos a un nombre de dominio y un puerto.
+- Enviamos un nombre de dominio a URL: whois.internic.net PUERTO: 43
+- Mostrarmos la respuesta del servidor
+
+Tened en cuenta que el nombre de dominio deberá introducirlo el usuario por teclado. Una vez introducido uno puede seguir introduciendo nuevos dominios. Controlar las excepciones si un usuario escribe algo incorrecto.

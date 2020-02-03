@@ -1,0 +1,9 @@
+Se trata de un cliente que se conecta a un servidor. El servidor, sin necesidad de que el cliente le envíe nada, devolverá la fecha actual en el formato que queráis.
+
+Para ello deberéis obtenerla fecha del sistema utilizando la clase Java:
+java.util.date o java.util.calendar
+
+https://stackabuse.com/how-to-get-current-date-and-time-in-java/
+
+El servidor tiene que estar siempre activo para poder responder a un cliente.
+El servidor tendra que poder responder a varios clientes de forma simultanea.

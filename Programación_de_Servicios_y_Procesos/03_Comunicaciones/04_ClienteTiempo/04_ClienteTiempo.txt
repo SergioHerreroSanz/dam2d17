@@ -1,0 +1,4 @@
+Nos conectamos a un nombre de dominio y un puerto y mostrarnos lo que nos devuelve
+URL: time.nist.gov PUERTO: 13
+
+Controlar excepciones en caso que el servidor estuviera caído y no respondiera.

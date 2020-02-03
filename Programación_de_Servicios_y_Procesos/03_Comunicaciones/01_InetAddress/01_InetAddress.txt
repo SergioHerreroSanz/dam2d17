@@ -1,0 +1,3 @@
+Utilizando la clase InetAddress mostrar "toda o casi toda" la información que nos proporciona esta clase.
+
+Pide al usuario que escriba una IP o nombre de dominio desde el teclado y muestra la información. Una vez mostrada el usuario puede seguir escribiendo mas direcciones para obtener nuevamente la información.
