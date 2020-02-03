@@ -1,0 +1,13 @@
+* {
+    max-width: 100%;
+    text-align: justify;
+}
+
+table {
+    width: 90%;
+    margin: auto;
+}
+
+.nodisplay {
+    display: none;
+}
