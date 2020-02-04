@@ -15,8 +15,8 @@ Laravel es un framework (entorno de desarrollo que contiene librerías y herrami
     - [Bases de datos](#bases-de-datos)
       - [Modelo](#modelo)
       - [Controlador](#controlador-1)
-- [Json](#json)
-    - [Migración](#migraci%c3%b3n)
+      - [Migración](#migraci%c3%b3n)
+  - [Json](#json)
 
 ## 0- Instalación
 
@@ -206,7 +206,25 @@ php artisan make:controller AlumnoController --resource
 ```
 
 
-# Json
+
+Muestra el solo X elementos cada página
+```php
+paginate($num);
+```
+
+Cuando el nombre del modelo + s no se corresponde con el nombre de la tabla (En el modelo).
+
+```php
+Protected $table = "nombretabla";
+```
+
+#### Migración
+
+```bash
+php artisan make:migration create_alumnos_table
+```
+
+## Json
 
 ```php
 orderBy(columna)
@@ -226,21 +244,4 @@ public function equipo(){
 public function equipo(){
     return $this->hasMany(/App/Jugador)
 }
-```
-
-Muestra el solo X elementos cada página
-```php
-paginate($num);
-```
-
-Cuando el nombre del modelo + s no se corresponde con el nombre de la tabla (En el modelo).
-
-```php
-Protected $table = "nombretabla";
-```
-
-### Migración
-
-```bash
-php artisan make:migration create_alumnos_table
 ```
