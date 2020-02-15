@@ -1,0 +1,1 @@
+Crea un cliente y un servidor que se comuniquen a utilizando el protocolo UDP. El cliente introducirá por teclado una frase, la enviará al servidor, y el servidor le devolverá la frase en Mayúsculas.

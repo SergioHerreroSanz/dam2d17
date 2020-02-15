@@ -1,0 +1,3 @@
+Realizad un chat utilizando multicast. Cada participante escribirá sus propios mensajes, cada vez que se escribe una línea se envía a todos los participantes del grupo.
+
+¿Será necesario utilizar un servidor? ¿Podemos hacerlo solo utilizando clientes?
