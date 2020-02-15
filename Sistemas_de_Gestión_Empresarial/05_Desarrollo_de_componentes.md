@@ -178,7 +178,7 @@ Las tuplas al ser objetos fijos no tienen los métodos que nos permiten modifica
 
 Las listas y las tuplas son tipos de datos similares en cuanto a funcionamiento, por lo que será fácil crear una a partir de otra. Así, si tenemos una lista, con la llamada a la función `tuple(lista)` conseguiremos formar una tupla desde la lista pasada como parámetro. Si necesitamos una lista a partir de una tupla, llamaremos a la función `list(tupla)` a la que pasaremos una tupla como parámetro, así conseguiremos una lista modificable.
 
-### 5.2.6 variables
+### 5.2.6 Variables
 
 Una de las características en el entorno de python tomadas de JavaScript es la no obligatoriedad de definir una variable para su uso. Cuando se requiere utilizar una variable nueva simplemente le asignaremos un valor, y a partir de ese punto, la valor estará accesible para el programa. Si bien no es imprescindible su definición, la diferencia con JavaScript es el hecho de que es estrictamente necesario inicializar la variable antes de utilizarla. El lenguaje nos permite inicialmente asignarle a la variable un valor numérico para posteriormente poderle asignar una cadena de texto. Podremos hacer esto sin ningún problema ya que será el intérprete el que en tiempo de ejecución determine el tipo de dato.
 
@@ -198,3 +198,61 @@ A la hora de imprimir con la función `print()` tenemos que señalar un par de c
 Un problema que nos vamos a encontrar es la utilización de los caracteres acentuados y la ñ. aunque por defecto el código fuente se escriba en formato UTF8 la función d entrada `raw_input()` se configura de manera general, siendo imprescindible codificar los caracteres al lenguaje adecuado antes de imprimirlos usando la función `encode(normaISO)`. [Referencia](https://docs.python.org/2/library/sys.html).
 
 En el lenguaje C se implementan las variables de sistema `argV` y `argC`. Bajo Python se ha seguido una nomenclatura similar creando una lista llamada `argV` que nos dará acceso a todos los parámetros que nos pasen desde el sistema. Para poder utilizarlo tendremos que importarlo con la cláusula `import sys`.
+
+### 5.2.7- Controles de flujo
+
+En Python no existen elementos para determinar el final de un bloque. Para establecer el contenido de dicho bloque se deberá sangrar el código con el mismo numero de espacios o tabuladores, de forma que todas las líneas que pertenezcan a dicho bloque tendrán el mismo sangrado, añadiendo además diferentes niveles de sangrado según el número de bloque necesitemos anidar. Para abandonar un bloque se eliminará dicho sangrado alineándolo con la sentencia que ha creado el bloque.
+
+#### 5.2.7.1- Sentencias condicionales
+
+##### If
+
+Para realizar un determinado numero de sentencias en función de una condición utilizamos la clausula `if`. En su variante mas simple carece de la parte `else` y se ejecutarán todas las líneas cuando se cumpla la condición. La forma de usarla cuando se cumpla la parte `else` es ejecutándose la parte inmediatamente seguida a 'else' cuando la condición no se cumpla. Hay que destacar que en python carece de la clausula condicional `switch` o `case`, en su defecto tenemos la cláusula `elif`. Utilizaremos la estructura 'elif' tantas veces como sea necesario para simular la instrucción 'case'.
+
+```py
+if opcion = 1
+    #CODIGO
+elif opcion = 2
+    #CODIGO
+elif opcion = 3
+    #CODIGO
+elif opcion = 4
+    #CODIGO
+elif opcion = 5
+    #CODIGO
+elif opcion = 6
+    #CODIGO
+else
+    #DEFAULT
+```
+
+Al igual que en otros lenguajes Python permite una estructura similar al operador condicional `?:`. En el siguiente ejemplo se imprimirá 0 si el valor.
+
+```py
+print("Cero" if (val == 0) else "Distinto de 0")    #Python 2.7
+# TODO: Python 3
+```
+
+##### Bucles
+
+###### For
+
+Los bucles son las siguientes estructuras a ver. Para recorrer un objeto iterable como listas o tuplas se utilizan las estructuras `for`, que asignará a una variable uno de los elementos del objeto iterable y ejecutará las sentencias al comienzo de cada vuelta.
+
+```py
+for varElemento in ObjetoIterable
+    #CODIGO
+```
+
+Aunque Python no tiene bucles clásico tipo C se puede simular fácilmente creando una lista con los valores numéricos deseados para posteriormente recorrer dicha lista con la estructura presentada. Para formar la lista se debe utilizar la función `range(inicio, final, [salto])` de forma que nos crea el conjunto de elementos a recorrer en vez de hacerlo a mano.
+Una ultima construcción del bucle 'for' respecto a la sentencia 'if' nos va a permitir filtrar valores de listas.
+
+```py
+[elemento for elemento in lista if len(elemento) > 1]
+```
+
+Vamos a generar una nueva lista con los objetos que cumplan la condición, en este caso con aquellos objetos cuya longitud sea mayor de 1.
+
+###### While
+
+El siguiente bucle a conocer es el bucle `while`, aunque el bucle 'do while' no existe.

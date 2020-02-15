@@ -17,9 +17,9 @@ Usabilidad viene a referirse a la facilidad con que las personas pueden utilizar
 
 En la interacción persona-ordenador la usabilidad se refiere a la claridad y elegancia con que se diseña la interacción con un programa de ordenador, ya sea una aplicación de escritorio o un sitio web. El modelo conceptual de la usabilidad proviene del diseño centrado en el usuario y no estará completo sin la idea de utilidad.
 
-En inglés 'utilidad más usabilidad' es lo que se conoce cómo 'usefullness'. El uso, funcionalidad o diseño, programa u objeto no estará solo en la facilidad de manejo de la aplicación inmediata que hacemos de ellos, sino también y sobre todo en el beneficio o solución que obtenemos.
+En inglés 'utilidad más usabilidad' es lo que se conoce cómo 'usefullness'. El uso, funcionalidad o diseño de un programa u objeto no estará solo en la facilidad de manejo de la aplicación inmediata que hacemos de ellos, sino también y sobre todo en el beneficio o solución que obtenemos.
 
-La usabilidad es un concepto empírico, lo que significa que puede ser medida y evaluada, y por lo tanto no debe entenderse cómo un concepto abstracto subjetivo o carente de significado. De hecho la usabilidad es un atributo de calidad cuya definición formal es "Resultado de la enumeración de los diferentes componentes o variables a través de los cuales puede ser medida". Entre estos componentes encontraremos los siguientes:
+La usabilidad es un concepto empírico, lo que significa que puede ser medida y evaluada, y por lo tanto no debe entenderse cómo un concepto abstracto, subjetivo o carente de significado. De hecho la usabilidad es un atributo de calidad cuya definición formal es "Resultado de la enumeración de los diferentes componentes o variables a través de los cuales puede ser medida". Entre estos componentes encontraremos los siguientes:
 
 <div style="display: none">
 Cuestiones que nos hemos de preguntar respecto a si un software es rentable o no
@@ -57,7 +57,7 @@ Sobre esta normativa, la usabilidad se refiere a la capacidad de un software de 
 
 Esta definición hace énfasis en los atributos internos y externos del producto, los cuales contribuyen a su funcionalidad y eficiencia. La usabilidad depende no solo del producto sino que también depende de cómo es interpretado por el usuario.
 
-### 4.1.2 ISO 9241
+### 4.1.2- ISO 9241
 
 Bajo esta normativa definiremos usabilidad de la siguiente manera:
 
@@ -286,7 +286,7 @@ La relación entre los elementos trata la proximidad espacial que debe existir e
 
 Se va a referir a la facilidad de lectura y comprensión de la comunicación de las ventanas. Va a venir determinada en función del espaciado y la alineación de los elementos de la interfaz.
 
-### 4.7.6 Integración
+### 4.7.6- Integración
 
 La integración se va a medir como relación entre el diseño visual de la aplicación y las aplicaciones del sistema u otras aplicaciones del entorno gráfico con el que se utiliza. La localización visual de los componentes es importante porque la relación entre los componentes es indicada por su posición (layout). Un layout limpio es crucial para crear un flujo visual de información sin problemas para el usuario.
 
@@ -328,9 +328,118 @@ Se debera aplicar su uso solo en casos necesarios. Su utilización hace difícil
 Es un tipo de menú desplegable que se muestra bajo determinadas situaciones, como cuando el cursor esta bajo un objeto y se presiona el botón derecho del ratón. Se emplean como su nombre indica ara proporcionar la ejecución contextual de una serie de comandos asociados al objeto en el momento de ser invocado. Se debe de ser cuidados con su aplicación ya que este tipo de menús es usado por usuarios intermedios y avanzados.
 
 Dado que muchos usuarios podrían
- no ser conscientes de su existencia, se deberán seguir las siguientes premisas:
+no ser conscientes de su existencia, se deberán seguir las siguientes premisas:
 
 - Proporcionar acceso alternativo para cada una de las funciones que están expuestas el menú contextual.
 - Deben ser lo mas simples posibles para maximizar su eficiencia, colocando un máximo de 10 ítems.
 - Se debe evitar el uso de menús de cascada dentro de los menús contextuales.
 - Se ha de ordenar los ítems de acuerdo a algún criterio lógico, operativo o funcional según convenga, y se debera además usar la línea de separador grafico para denotar agrupaciones de opciones relacionadas.
+
+## 4.8- Pautas de diseño de interfaz. Colores, fuentes, iconos, distribución de los elementos
+
+En el diseño de interfaces, el color deberá de ser tratado como una herramienta adicional y no como una necesidad básica. No se deberá de depender de colores para mostrar información importante, ya que si no son correctamente percibidos como en casos en el que el usuario tenga sistemas de baja resolución o un problema de visión no tendrá la utilidad buscada. En el uso del color se podrán aplicar las siguientes directivas:
+
+- El color es una forma de información secundaria, por lo que habrá que evitar confiar en el color como una única medida de informar sobre algo.
+- Evitar un numero excesivo de colores y de colores llamativos
+- Aplicar un conjunto limitado de colores en los que los colores apagados y sutiles suelen ser los mas apropiados dentro del diseño de interfaces de aplicaciones de corte empresarial y académicas. En el caso de que los componentes estén diseñados para niños, se deberá diseñar una interfaz en función de la edad, cultura, conocimientos, etc. En este caso seria recomendable colores primarios sin saturar mucho la interfaz, a no ser que así sea requerido por el cliente
+- El uso de paletas de combinación de colores a aplicar en una interfaz va a dar una apariencia de unificación, consistencia y formalidad minimizando la posibilidad de distractores visuales.
+
+Los usuarios con desórdenes visuales como daltonismo requieren alternativas para la asignación de colores. Una buena interfaz de usuario se anticipará a estas necesidades proporcionando una opción para la personalización de las preferencias de color, y será mejor incluso si la aplicación ya esta configurado con una buena configuración de color y contraste por defecto.
+
+De cualquier manera, es necesario permitir al usuario que personalice los colores en cualquier parte de la aplicación que presente información importante. El objetivo es que la aplicación comunique la información de una forma efectiva, independientemente de la configuración o personalización de color que el usuario seleccione.
+
+A parte de la diferenciación de matices existen otros problemas con los niveles de contraste, ya que algunos usuarios requieren altos niveles de contraste entre los colores del fondo y el primer plano, como por ejemplo el negro sobre blanco o blanco sobre negro. Algunas personas pueden experimentar incomodidad si se aplica una asignación de bajo contraste como por ejemplo texto gris sobre un gris mas brillante.
+
+Respecto a las fuentes, no se deberían de utilizar mas de 3 fuentes y tamaños de letras dentro de la aplicación. Demasiadas fuentes y tamaños de letras van a hacer que la interfaz parezca recargada y no quede bien, además de dificultar la lectura. Las fuentes también se pueden utilizar para organizar la información, y pueden incluso transmitir un determinado énfasis. Algunos puntos importantes a destacar de cara a las fuentes son:
+
+- Estilos mayúsculas en encabezados: Se iniciará en mayúscula todas las palabras de los elementos salvo dos excepciones:
+  - Artículos: Un, uno, una unos, unas, el , lo ,la , los, las, le, les
+  - Conjunciones: Y, pero mas, para, todavía, etc.
+- Estilos mayúsculas en oraciones: Se deberá colocar en mayúscula la primera letra de la palabra inicial y cualquier otra palabra, normalmente iniciada en mayúsculas en oraciones tales como nombres.
+- Evitar las fuentes en cursiva ya que suelen ser mas difíciles de leer, especialmente en bajas resoluciones.
+- Limitar el número de fuentes y estilos usados en las interfaces de las aplicaciones, un uso excesivo de fuentes tenderá al desorden visual de las ventanas
+- Usar adecuadamente las negritas, de forma que se apliquen para estimular los procesos cognitivos de selección y organización de forma conveniente. Por otra parte, su aplicación excesiva reduce el énfasis en la información y dificulta la lectura.
+- Siempre que sea posible, usar la fuente estándar del sistema operativo para los elementos comunes de la interfaz, para así estandarizar e integrar la nueva aplicación con las ventanas de las demás herramientas del sistema.
+- Las frases deben ser breves y concisas con un lenguaje claro y sin errores gramaticales ni ortográficos. Además los mensajes de aviso deben ser positivos en la medida de lo posible, y ayudar al usuario con una breve explicación.
+
+Finalmente, los iconos no deben ser excesivamente llamativos, y deben ir acompañados con una palabra inferior que indique su función.
+
+## 4.9- Pautas de diseño de los elementos
+
+### 4.9.1- Cuadros de texto (TextBox)
+
+Los cuadros de texto son usados para ingresar una o mas líneas de texto plano. Algunos puntos importantes a tener en cuenta en el diseño de estos son:
+
+- Se debe rotular el TextBox con etiquetas colocadas junto al control, de forma que nos den información de este y de acuerdo al uso de mayúsculas.
+- Se debe justificar a la derecha los cuadros de texto cuyo contenido sea exclusivamente numérico. Esto es especialmente útil para cuando en una ventana el usuario quiera comparar dos valores numéricos en la misma columna. En este caso habría que asegurarse de que el margen derecho del control esté también alineado.
+- Se debe ajustar el tamaño de cuadro de texto al probable tamaño de sus datos de entrada. Esto dará información visual útil acerca del tamaño de la entrada de datos esperada. También es aconsejable no colocar con el mismo ancho a todos los campos de entrada.
+- Cuando sea posible proporcionar un control adicional que limite la entrada de datos a un rango válido, por ejemplo limitar a tipo numérico los datos introducidos en un campo edad.
+- Proporcionar un texto estático explicativo para aquellos TextBox que requieran una entrada en un formato particular, como por ejemplo NIFs y fechas.
+- Habrá que proporcionar al usuario el acceso a las teclas Enter o Tab para cambiar entre los controles de cuadro de texto, de forma que sea mas fácil la navegación por ellos.
+
+### 4.9.2- Objetos botones de comando
+
+Un botón de comando o 'command button' tiene la función de iniciar una acción determinada al hacer click sobre ellos. Las pautas que deberemos seguir en el diseño de los botones serán:
+
+- Rotular todos los botones con verbos en infinitivo, en combinación con un adjetivo si se requiere. Aplicaremos el uso de mayúsculas de encabezado.
+- Proporcionaremos una tecla de acceso en la etiqueta del botón, de forma que le permita al usuario activar el botón con un atajo de teclado.
+- Usaremos puntos suspensivos al final del rótulo para indicar que la acción sobre el botón requerirá de valores??? adicionales.
+- No deberemos aplicar mas de una o dos acciones diferentes para botones de una misma ventana, además todos los botones deben tener la misma altura, de forma que nos dará una apariencia visual uniforme que nos hará mas fácil su uso.
+- No se deberían asociar acciones a los eventos doble click ni click derecho en un botón de comando, ya que complicarían mucho el funcionamiento de la ventana.
+- En las ventanas de diálogo deberemos tratar de no asignar botones por defecto para la respuesta.
+
+### 4.9.3 Botones de opción (Radio Button)
+
+Los botones de opción proporcionan al usuario un conjunto de valores para la selección de un único valor. Estos valores son mutuamente excluyentes. Las pautas principales que deberemos aplicar en el diseño de estos serán:
+
+- Aplicar botones de opción para implementar la selección entre un conjunto de valores de un mínimo de dos elementos
+- No deben iniciar una acción cuando el usuario haga click sobre alguna de las opciones.
+- La selección de un botón de opción no deberia aceptar el valor de ningún otro control, sin embargo, esta acción si podrá habilitar, inhabilitar, ocultar o mostrar otros controles de la interfaz.
+- Para rotular el grupo de botones de opción usaremos la combinación de mayúsculas de encabezado. Además deberemos ubicar esta etiqueta que nos va a determinar el grupo encima de los botones o al lado izquierdo de estos.
+- Procuraremos cada botón en particular en combinación de mayúsculas.
+- El número de elementos para botones de acción no debera de exceder de 8. Si sobreasamos esta valor deberemos evaluar la posibilidad de utilizar listas desplegables simples.
+- Trataremos de alinear los botones de opción verticalmente, ya que esto contribuye a hacer mas fácil la revisión visual de la ventana.
+
+### 4.9.3 Objetos botones de chequeo (CheckBox)
+
+Son usados para denotar la posibilidad de selección multiple, no serán mutuamente excluyentes. Las pautas a seguir para el diseño de dichos objetos serán:
+
+- El usuario no iniciará una acción cuando se haga el click sobre un CheckBox.
+- La selección de un botón de chequeo no deberia afectar el valor de ningún otro control.
+- Si la selección de un botón de chequeo afecta a otro control habrá que ubicarlo inmediatamente encima o al lado izquierdo del botón que es aceptado.
+- Usaremos la combinación de mayúsculas de encabezado para rotular los grupos de botones de chequeo.
+- El número de elementos para botones de chequeo no deberá exceder de 8 elementos. Si sobrepasamos este valor deberíamos evaluar la posibilidad de aplicar listas desplegables con opciones de marcas de chequeo.
+- Deberemos tratar de alinear los botones de chequeo verticalmente, ya que facilita la visibilidad.
+
+### 4.9.5 Objeto ComboBox
+
+Los Combo Box o cuadros combinados son listas desplegables combinadas para dar al usuario la capacidad de selección junto a un conjunto de valores, que se darán en una lista. Este objeto combina la capacidad de un cuadro de texto y una lista. Las pautas a seguir para el diseño de estos objetos serán:
+
+- Se recomienda su uso para gestionar la selección de un único valor, pudiendo seleccionar entre varios.
+- La selección no deberá desencadenar ninguna otra acción en la aplicación.
+- Es necesario rotular este objeto con una etiqueta colocada encima o a la izquierda del control. Dicha etiqueta estará en mayúsculas.
+- A los elementos del ComboBox se nombrarán con mayúsculas de oración.
+
+### 4.9.6 Objeto lista (ListBox)
+
+Estos objetos serán usados para dar al usuario la capacidad de selección de uno o varios valores dentro de un conjunto de valores dados en el interfaz a través de una lista. Las pautas que seguiremos serán las siguientes:
+
+- Deberemos rotular con una etiqueta colocada encima o a la izquierda del control usando mayúsculas en encabezado.
+- Aplicaremos a los elementos de la lista combinación de mayúsculas de oración.
+- En la lista se diseñará para que muestre al menos 4 ítems a la vez sin realizar scroll. Para listas de 10 o más elementos se deberá adecuar el tamaño de forma apropiada.
+- No se deberá diseñar listas con menos de 5 elementos.
+- Solo usaremos encabezado de columnas:
+  - La lista tiene mas de una columna
+  - Solo tiene una columna pero puede reordenarse en tiempo de ejecución
+- Para listas de selección multiple se debera de mostrar el número de ítems actualmente seleccionados en un texto debajo de la lista.
+- Deberemos considerar la posibilidad de proporcionar los botones 'Seleccionar todo' y 'Deseleccionar todo'.
+- La selección de un ítem dentro de la lista no debería iniciar ninguna acción en la aplicación.
+- Deberemos tratar los botones de acción verticalmente de forma que contribuya a hacer mas legible la ventana.
+
+### 4.9.7 Objeto pestañas (Tab)
+
+Es un objeto adecuado para presentar información relacionada dentro de una misma ventana, de forma que podamos hacer agrupaciones sin tener que desplegar toda la información al mismo tiempo. Las pautas que seguiremos en el diseño de estas serán:
+
+- No colocaremos demasiadas pestañas dentro de una misma ventana. Se recomiendan entre 4 y 8.
+- Rotularemos las pestañas con combinación de mayúsculas de encabezado.
+- Si un control afecta el contenido de una sola pestaña, dicho control deberá estar colocado dentro de esta. Por contra, si el control afecta al contenido de varias pestañas, dicho control deberá estar ubicado a nivel de la ventana, fuera de las pestañas.

@@ -153,7 +153,7 @@ Las listas tienen un orden predefinido, que es el que se encuentra al recorrer u
 Para terminar las listas hay una función que nos da la posibilidad de aplicar una operación a cada elemento de la lista a la vez que determinamos si dicho componente formará parte de la nueva lista
 
 ```py
-(varEle * 2 for varEle in listaValores if varEle%2!=0)
+varEle * 2 for varEle in listaValores if varEle%2!=0
 ```
 
 Para cada elemento varEle que este en listaValores que sea impar, lo devolverá multiplicado por dos.
@@ -256,3 +256,61 @@ Vamos a generar una nueva lista con los objetos que cumplan la condición, en es
 ###### While
 
 El siguiente bucle a conocer es el bucle `while`, aunque el bucle 'do while' no existe.
+
+#### 5.2.7.2- Funciones para gestión de listas
+
+Alguna de las funciones útiles que tendremos para la gestión de las listas de forma que nos permitan leerlas y modificarlas van a ser:
+
+- `map(función, lista)`: Aplicara la función definida por el usuario a cada uno de los elementos, creando así una lista.
+- `filter(función, lista)`: Creará una nueva lista únicamente con aquellos elementos que tras pasarlos a la función definida devuelva un valor verdadero.
+- `reduce(función, lista)`: Opera dos a dos sobre los componentes de la lista hasta que obtiene un único resultado final reutilizando los resultados intermedios.
+- `getattr(objeto, nombreMétodo)`: Ya hemos mencionado anteriormente que para python todo es un objeto, según esta característica decíamos que cualquier tipo básico es un objeto. Teniendo en cuenta a los métodos implementados por un objeto se puede conseguir en cualquier momento una referencia a una función. Con esta función obtendremos un puntero a dicho método en ese objeto. Podremos llamarlo añadiendo paréntesis y los parámetros necesarios.
+
+#### 5.2.7.3- Operadores lógicos y funciones lambda
+
+Hay ciertas características de los operadores lógicos importantes a comentar. En primer lugar los operadores lógicos funcionan en cortocircuito, es decir, cuando se ha determinado completamente el sentido de una expresión condicional no se seguirá evaluando el resto de la expresión. También hay que comentar que la representación del valor falso en python no es un valor único, sino un conjunto de valores que se pueden interpretar como tal. Esos valores son:
+
+- `""`: Cadena vacía
+- `()` Tupla vacía
+- `{}`: Diccionario vacío
+- `[]`: Lista vacía
+- `0`: Cero
+- `None`
+
+El resto de valores se interpretaran como verdadero no estando determinado que valor se va a determinar en cada caso.
+
+Con los conocimientos sobre los operadores lógicos podremos implementar de una manera mas eficiente el operador condicional `?:`, que esta presente en otros lenguajes de programación. Será de la siguiente forma:
+
+```py
+expresionBooleana and valorSiVerdadero or valorSiFalso
+```
+
+Esta construcción fallará únicamente en el caso en el que ValorSiVerdadero devuelve algún valor interpretable como falso, en cuyo caso los valores podrían convertirse en una lista y evitar el error.
+
+Aparece una construcción tomada de los lenguajes funcionales llamada función lambda. Esta construcción nos va a permitir construir una función simple en el lugar que la necesitemos sin tener que definirla previamente.
+
+```py
+(lambda x: x*2)(3)
+```
+
+Pasado el parámetro 3 a la función en línea x*2 obteniendo en este caso el valor 12
+
+### POO
+
+Python recoge lo mejor de los lenguajes existentes y lo reutiliza para su beneficio. Además de ser un lenguaje estructurado es además un lenguaje orientado a objetos, de forma que incorpora la mayoría de los paradigmas de dicho lenguaje de programación. Para definir una clase utilizaremos la palabra reservada `class` seguida de el nombre deseado de la clase seguido de `:`. Todo el contenido de la clase llevará el sangrado oportuno. Cada método perteneciente a dicha clase va a ser creado como una función general, utilizando las características que hemos visto hasta ahora. Los métodos `getTipo()` y `setTipo()` son utilizados para establecer el valor de las propiedades tipo definidas en el constructor.
+
+```py
+_init__(self.tipo())
+```
+
+A la hora de definir métodos para una clase la única particularidad que debemos tener en cuenta es que el primer parámetro de cada método será un objeto. Será un objeto introducido por el intérprete cuando se llame. En caso del constructor dicho objeto es un nuevo objeto, en el resto de casos será el objeto que representa a si mismo.
+
+La creación de propiedades se debe hacer en el constructor, dando valor a todas las propiedades que necesitamos en el objeto `self` que se pasa. El uso de las clases es similar al de cualquier lenguaje de programación orientada a objetos, definiendo una variable y asignando el valor. Para ello pasaremos entre paréntesis los valores del construcción excepto el parámetro 'self'.
+
+##### Herencia
+
+El concepto de herencia se implementa acompañando al nombre de las clases de las que hereda, separadas por comas y encerrándolas entre paréntesis. Como la herencia conlleva trasvases de métodos y propiedades estas deberán ser inicializadas adecuadamente, de forma que el constructor de la clase hija llame al constructor de la clase padre de forma que inicialicemos primero el contenido de la clase padre y a continuación de la clase nuestra.
+
+##### Sobrecarga
+
+Python no permite la sobrecarga de los métodos de un padre, entonces va a utilizar la última condición que encuentre. No podremos llamar a diferentes métodos sssssss del tipo de la variable ya que esto esta prohibido. El último sssss de la programación orientada a objetos es ssss. Este punto en python es muy simple ya que no existe ningún tipo de protección, todo va a ser público y accesible. En principio python va a definir como métodos y propiedades privados a todo aquello que empiece por dos guiones bajos `__`, pero el mecanismo interior del intérprete será renombrar dicho intérprete anteponiendo el nombre de la clase seguido del objeto, de forma que aquella propiedad supuestamente privada nos va a dar una excepción al intentar acceder directamente a ella. Si por contra utilizamos la propiedad en nombre de la clase tendremos acceso a ella.

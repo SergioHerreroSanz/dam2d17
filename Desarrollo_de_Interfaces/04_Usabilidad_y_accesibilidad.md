@@ -328,9 +328,38 @@ Se debera aplicar su uso solo en casos necesarios. Su utilización hace difícil
 Es un tipo de menú desplegable que se muestra bajo determinadas situaciones, como cuando el cursor esta bajo un objeto y se presiona el botón derecho del ratón. Se emplean como su nombre indica ara proporcionar la ejecución contextual de una serie de comandos asociados al objeto en el momento de ser invocado. Se debe de ser cuidados con su aplicación ya que este tipo de menús es usado por usuarios intermedios y avanzados.
 
 Dado que muchos usuarios podrían
- no ser conscientes de su existencia, se deberán seguir las siguientes premisas:
+no ser conscientes de su existencia, se deberán seguir las siguientes premisas:
 
 - Proporcionar acceso alternativo para cada una de las funciones que están expuestas el menú contextual.
 - Deben ser lo mas simples posibles para maximizar su eficiencia, colocando un máximo de 10 ítems.
 - Se debe evitar el uso de menús de cascada dentro de los menús contextuales.
 - Se ha de ordenar los ítems de acuerdo a algún criterio lógico, operativo o funcional según convenga, y se debera además usar la línea de separador grafico para denotar agrupaciones de opciones relacionadas.
+
+## 4.8- Pautas de diseño de interfaz. Colores, fuentes, iconos, distribución de los elementos
+
+En el diseño de interfaces, el color deberá de ser tratado como una herramienta adicional y no como una necesidad básica. No se deberá de depender de colores para mostrar información importante, ya que si no son correctamente percibidos como en casos en el que el usuario tenga sistemas de baja resolución o un problema de visión no tendrá la utilidad buscada. En el uso del color se podrán aplicar las siguientes directivas:
+
+- El color es una forma de información secundaria, por lo que habrá que evitar confiar en el color como una única medida de informar sobre algo.
+- Evitar un numero excesivo de colores y de colores llamativos
+- Aplicar un conjunto limitado de colores en los que los colores apagados y sutiles suelen ser los mas apropiados dentro del diseño de interfaces de aplicaciones de corte empresarial y académicas. En el caso de que los componentes estén diseñados para niños, se deberá diseñar una interfaz en función de la edad, cultura, conocimientos, etc. En este caso seria recomendable colores primarios sin saturar mucho la interfaz, a no ser que así sea requerido por el cliente
+- El uso de paletas de combinación de colores a aplicar en una interfaz va a dar una apariencia de unificación, consistencia y formalidad minimizando la posibilidad de distractores visuales.
+
+Los usuarios con desórdenes visuales como daltonismo requieren alternativas para la asignación de colores. Una buena interfaz de usuario se anticipará a estas necesidades proporcionando una opción para la personalización de las preferencias de color, y será mejor incluso si la aplicación ya esta configurado con una buena configuración de color y contraste por defecto.
+
+De cualquier manera, es necesario permitir al usuario que personalice los colores en cualquier parte de la aplicación que presente información importante. El objetivo es que la aplicación comunique la información de una forma efectiva, independientemente de la configuración o personalización de color que el usuario seleccione.
+
+A parte de la diferenciación de matices existen otros problemas con los niveles de contraste, ya que algunos usuarios requieren altos niveles de contraste entre los colores del fondo y el primer plano, como por ejemplo el negro sobre blanco o blanco sobre negro. Algunas personas pueden experimentar incomodidad si se aplica una asignación de bajo contraste como por ejemplo texto gris sobre un gris mas brillante.
+
+Respecto a las fuentes, no se deberían de utilizar mas de 3 fuentes y tamaños de letras dentro de la aplicación. Demasiadas fuentes y tamaños de letras van a hacer que la interfaz parezca recargada y no quede bien, además de dificultar la lectura. Las fuentes también se pueden utilizar para organizar la información, y pueden incluso transmitir un determinado énfasis. Algunos puntos importantes a destacar de cara a las fuentes son:
+
+- Estilos mayúsculas en encabezados: Se iniciará en mayúscula todas las palabras de los elementos salvo dos excepciones:
+  - Artículos: Un, uno, una unos, unas, el , lo ,la , los, las, le, les
+  - Conjunciones: Y, pero mas, para, todavía, etc.
+- Estilos mayúsculas en oraciones: Se deberá colocar en mayúscula la primera letra de la palabra inicial y cualquier otra palabra, normalmente iniciada en mayúsculas en oraciones tales como nombres.
+- Evitar las fuentes en cursiva ya que suelen ser mas difíciles de leer, especialmente en bajas resoluciones.
+- Limitar el número de fuentes y estilos usados en las interfaces de las aplicaciones, un uso excesivo de fuentes tenderá al desorden visual de las ventanas
+- Usar adecuadamente las negritas, de forma que se apliquen para estimular los procesos cognitivos de selección y organización de forma conveniente. Por otra parte, su aplicación excesiva reduce el énfasis en la información y dificulta la lectura.
+- Siempre que sea posible, usar la fuente estándar del sistema operativo para los elementos comunes de la interfaz, para así estandarizar e integrar la nueva aplicación con las ventanas de las demás herramientas del sistema.
+- Las frases deben ser breves y concisas con un lenguaje claro y sin errores gramaticales ni ortográficos. Además los mensajes de aviso deben ser positivos en la medida de lo posible, y ayudar al usuario con una breve explicación.
+
+Finalmente, los iconos no deben ser excesivamente llamativos, y deben ir acompañados con una palabra inferior que indique su función.

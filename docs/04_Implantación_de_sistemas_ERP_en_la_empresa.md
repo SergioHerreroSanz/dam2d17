@@ -249,7 +249,7 @@ Pasaremos ahora a incorporar el sistema gestor en la empresa. Dicha empresa asum
 
 #### Fase 5 Producción y soporte: Uso correcto y mantenimiento
 
-En la fase de producción y soporte el producto ya ha llegado a su fin, se han cumplido las expectativas y los tiempos produciendo un sistema funcional. A partir de este punto, queda solo pendiente la realización del traspaso de documentación.
+En la fase de producción y soporte el producto ya ha llegado a su fin, se han cumplido las expectativas y los tiempos produciendo un sistema funcional. A partir de este punto, solo queda pendiente la realización del traspaso de documentación.
 
 En las entrevistas finales se proporcionará todo el material y documentación disponible al cliente.
 
