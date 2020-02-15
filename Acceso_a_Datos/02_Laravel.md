@@ -245,3 +245,77 @@ public function equipo(){
     return $this->hasMany(/App/Jugador)
 }
 ```
+
+---
+
+php artisan make:controller NOMBRE --resources		//Crear controlador
+php artisan make:model NOMBRE_TABLA_SINGULAR		//Crear modelo
+
+php artisan make:migration NOMBRE 
+
+php artisan make:migration create_alumnos_table
+php artisan make:migration create_grupos_table
+php artisan make:migration create_profesors_table
+php artisan make:migration create_grupo_profesor_table
+
+
+
+
+
+
+---
+
+Tinker
+Premite hacer pruebas con eloquent y bd sin programar (consola)
+
+php artisan tinker
+
+Alumo::all()
+
+composer dump-autoload		//Si no va
+
+---
+
+Validar (Servidor)
+
+$req->validate([
+	'nombre'=>'required',
+	'nota'=>'required'
+]);
+
+value="{{old('nombre')}}"		//Para mantener todos los valores
+
+---
+model
+asignacion masiva (fillable)
+referencias entre modelos (relaciones)
+timestamps
+metodos eloquent
+filtrados (where...)
+json y apis
+llamar metodos que no permite el formulario (+csrf)
+resources
+
+---
+Autentificación
+
+Middleware
+
+composer require laravel/ui
+php artisan ui bootstrap --auth
+
+instalar node (web)
+npm install 
+npm run dev
+
+Crear un constructor en el controlador donde llamamos al middleware 'auth' y si queremos añadimos excepciones.
+
+```php
+public function __construct(){
+    $this->middleware('auth')
+         ->except([
+             'index',
+             'show'
+         ])
+])
+```
