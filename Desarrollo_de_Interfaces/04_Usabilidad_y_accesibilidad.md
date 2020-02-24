@@ -314,7 +314,7 @@ Una barra de menú como mínimo deberá contener el ítem de ayuda, que nos de i
 
 Cuando se selecciona un ítem de la barra de menú aparecen los submenús desplegables, que también son conocidos como drop-down o pull-down. Como características importantes:
 
-- Se deben organizar los ítems en tipos relacionados sobre las funciones que realizan, como por ejemplo los menús de edición , que contendrán todas las herramientas referidas a dicha finalidad
+- Se deben organizar los ítems en tipos relacionados sobre las funciones que realizan, como por ejemplo los menús de edición, que contendrán todas las herramientas referidas a dicha finalidad.
 - No se debera superar por norma mas de los 15 subítems dentro de un mismo ítem. En cado necesarios se podrían reorganizar los ítems de la categoría superior.
 - Evitar la creación de nuevos ítems en tiempo de ejecución , ya que dificulta su utilización.
 - Es recomendable usar y dar acceso a la combinación de teclas en los submenús mas frecuentes.

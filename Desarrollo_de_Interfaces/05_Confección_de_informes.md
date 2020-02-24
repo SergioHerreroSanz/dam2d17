@@ -57,7 +57,7 @@ Los informes no estructurados son mas sencillos y seguros pero por contra requie
 
   Es la sección en la que se imprime al final de cada página y es utilizada normalmente para dar datos de paginación, datos totales por página, etc.
 
-Aunque no se deben contener obligatoriamente todas las secciones, si será aconsejable mantener una estructura y orden x secciones, ya que esto nos va a posibilitar la reutilización de esta estructura para otros informes.
+Aunque no se deben contener obligatoriamente todas las secciones, sí será aconsejable mantener una estructura y orden por secciones, ya que esto nos va a posibilitar la reutilización de esta estructura para otros informes.
 
 Los datos que aparecen en el informe finalizado van a depender de las opciones de organización, en particular, los datos del informe van a variar dependiendo de las secciones en las que desee insertar objetos de datos. Por ejemplo, si se inserta un objeto gráfico en el encabezado del informe, el gráfico aparecerá una única vez al principio del informe, y organizará los datos que contenga el informe.
 
@@ -70,9 +70,7 @@ Los informes van a necesitar separar los datos en diferentes grupos. Así será 
 - Para que el novel superior de la jerarquía aparezca en el informe el valor debe aparecer en los datos secundarios.
 - No puede existir una lógica circular en los datos, es decir, A no podrá estar relacionado con B si B esta relacionado con C y C a su vez Esta relacionado con A.
 
-Por ejemplo, si se desea mostrar una estructura jerárquica por ssssssss podremos ordenar
-
-usando el campo de datos que muestra a quien informa el empleado. Otro agrupamiento sería hacer un listado por departamentos siendo el campo principal el id de departamento y el secundario los empleados que sssssssss a él.
+Por ejemplo, si se desea mostrar una estructura jerárquica por de un departamento podremos agrupar los campos por id de empleado y especificar la jerarquía usando el campo de datos que muestra a quién informa el empleado. Otro agrupamiento sería hacer un listado por departamentos siendo el campo principal el id de departamento y el secundario los empleados que pertenezcan a él.
 
 ## 5.4- Filtrado de datos
 
