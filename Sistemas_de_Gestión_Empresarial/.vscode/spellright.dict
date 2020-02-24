@@ -15,4 +15,8 @@ elif
 else
 if
 while
-'self'.
+self
+cmp
+print
+str
+get

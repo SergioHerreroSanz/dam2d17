@@ -295,7 +295,7 @@ Aparece una construcción tomada de los lenguajes funcionales llamada función l
 
 Pasado el parámetro 3 a la función en línea x*2 obteniendo en este caso el valor 12
 
-### POO
+### 5.7.3- POO
 
 Python recoge lo mejor de los lenguajes existentes y lo reutiliza para su beneficio. Además de ser un lenguaje estructurado es además un lenguaje orientado a objetos, de forma que incorpora la mayoría de los paradigmas de dicho lenguaje de programación. Para definir una clase utilizaremos la palabra reservada `class` seguida de el nombre deseado de la clase seguido de `:`. Todo el contenido de la clase llevará el sangrado oportuno. Cada método perteneciente a dicha clase va a ser creado como una función general, utilizando las características que hemos visto hasta ahora. Los métodos `getTipo()` y `setTipo()` son utilizados para establecer el valor de las propiedades tipo definidas en el constructor.
 
@@ -307,10 +307,27 @@ A la hora de definir métodos para una clase la única particularidad que debemo
 
 La creación de propiedades se debe hacer en el constructor, dando valor a todas las propiedades que necesitamos en el objeto `self` que se pasa. El uso de las clases es similar al de cualquier lenguaje de programación orientada a objetos, definiendo una variable y asignando el valor. Para ello pasaremos entre paréntesis los valores del construcción excepto el parámetro 'self'.
 
-##### Herencia
+#### Herencia
 
 El concepto de herencia se implementa acompañando al nombre de las clases de las que hereda, separadas por comas y encerrándolas entre paréntesis. Como la herencia conlleva trasvases de métodos y propiedades estas deberán ser inicializadas adecuadamente, de forma que el constructor de la clase hija llame al constructor de la clase padre de forma que inicialicemos primero el contenido de la clase padre y a continuación de la clase nuestra.
 
-##### Sobrecarga
+#### Sobrecarga
 
-Python no permite la sobrecarga de los métodos de un padre, entonces va a utilizar la última condición que encuentre. No podremos llamar a diferentes métodos sssssss del tipo de la variable ya que esto esta prohibido. El último sssss de la programación orientada a objetos es ssss. Este punto en python es muy simple ya que no existe ningún tipo de protección, todo va a ser público y accesible. En principio python va a definir como métodos y propiedades privados a todo aquello que empiece por dos guiones bajos `__`, pero el mecanismo interior del intérprete será renombrar dicho intérprete anteponiendo el nombre de la clase seguido del objeto, de forma que aquella propiedad supuestamente privada nos va a dar una excepción al intentar acceder directamente a ella. Si por contra utilizamos la propiedad en nombre de la clase tendremos acceso a ella.
+Python no permite la sobrecarga de los métodos de un padre, entonces va a utilizar la última condición que encuentre. No podremos llamar a diferentes métodos en función del tipo de la variable ya que está prohibido. El último elemento clave de la programación orientada a objetos es la encapsulación de datos. Este punto en python es muy simple ya que no existe ningún tipo de protección, todo va a ser público y accesible. En principio python va a definir como métodos y propiedades privados a todo aquello que empiece por dos guiones bajos `__`, pero el mecanismo interior del intérprete será renombrar dicho componente anteponiendo el nombre de la clase seguido del objeto, de forma que aquella propiedad supuestamente privada nos va a dar una excepción al intentar acceder directamente a ella. Si por contra utilizamos la propiedad en nombre de la clase tendremos acceso a ella.
+
+La implementación de propiedades a través de métodos getter y setter también esta presente. El mecanismo es el siguiente:
+
+En el constructor definiremos una propiedad privada y crearemos además dos métodos en la clase, uno para establecer o set y otro para recoger get. En ellos utilizaremos la propiedad privada y a continuación definiremos una propiedad pública con un nombre distinto, usando la sentencia `nombrePropiedad= property(metodo_get, metodo_set)`. De esta forma aparece una nueva propiedad virtual almacenada en nombrePropiedad en los que podremos controlar los cambios que se realizan a través de los nuevos métodos.
+
+Por otra parte las clases nos permiten del uso de un conjunto de métodos con nombres especiales que le darán funciones añadidas. Por ejemplo podremos comparar dos clases mediante unos operadores implementados en el método \_\_cmp__. Si necesitamos imprimir la clase con la función 'print' llamaremos al método \_\_str__ para hacerlo. Los métodos mas importantes a conocer son los siguientes:
+
+- `__init__(self, args)`: Constructor
+- `__del__(self)`: Destructor
+- `__str__(self)`: Representación por cadenas
+- `__cmp__`: Comparación
+- `__len__(self)`: Determina la longitud de la clase
+
+Para terminar el recorrido de las características mas importantes de la POO de python comentar que existen dos operadores que podremos usar para determinar la igualdad de los objetos, dichos operadores son:
+
+- `is`: Va a determinar si dos variables referencian al mismo objeto en memoria
+- `==`: Determina cuando dos objetos tienen el mismo valor, llamando al método \_\_cmp__ implementado en la clase.
