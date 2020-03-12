@@ -1,3 +1,7 @@
+<style>
+* {text-align: justify}
+</style>
+
 # T5. Desarrollo de componentes
 
 ## 5.1 Introducción
@@ -20,10 +24,10 @@ Python surge en los años 90 en respuesta a una serie de necesidades plantadas p
 
 Python es un lenguaje interpretado multiplataforma cuyo lenguaje se convierte en código objeto. Se generaran unos ficheros con extensiones .puc o .pyo la primera vez que se ejecute. Lo bueno de Python es que une lo mejor de los dos mundos, es decir, la flexibilidad de los lenguajes de script y la velocidad de un lenguaje compilado.
 
-Python permite no declarar las variables para usarlas tal como ocurre en JavaScript aunque si que es obligatorio inicializarlas a algún valor a diferencia de algunos lenguajes orientados a objetos que las inicializan a un valor por defecto antes de su inicialización. Al no especificar el tipo de dato que se va a almacenar en una variable, esta podrá tener cualquier tipo de dato en cualquier momento, determinándose es tiempo de ejecución el tipo de esta. Las variables no son convertidas de forma automática de un tipo a otro, siendo necesaria una conversión por 'casting' para dicho uso. De forma que así un contenido numérico será transformado a texto antes de imprimirse. Python no permite asignaciones en línea como las asignaciones que se hacen en java.
+Python permite no declarar las variables para usarlas tal como ocurre en JavaScript aunque si que es obligatorio inicializarlas a algún valor a diferencia de algunos lenguajes orientados a objetos que las inicializan a un valor por defecto antes de su inicialización. Al no especificar el tipo de dato que se va a almacenar en una variable, esta podrá tener cualquier tipo de dato en cualquier momento, determinándose en tiempo de ejecución el tipo de esta. Las variables no son convertidas de forma automática de un tipo a otro, siendo necesaria una conversión por 'casting' para dicho uso. De forma que así un contenido numérico será transformado a texto antes de imprimirse. Python no permite asignaciones en línea como las asignaciones que se hacen en java.
 
 ```py
-[a=b=c=3]
+a=b=c=3
 ```
 
 ```java
@@ -34,7 +38,7 @@ Es un lenguaje un lenguaje a objetos en el que define todo como a un objeto, inc
 
 Una característica muy importante de este lenguaje, que además suele provocar problemas al comienzo de su uso es la utilización de sangrado en su código. En Python no existen mecanismos de definición de bloques explícitos como pueda ocurrir en otros lenguajes como C o JavaScript. En Python el concepto de bloque se va a crear con el sangrado obligatorio del código, y además, un bloque va a comenzar con el caracter ':', y todo lo que deba ejecutarse dentro deberá estar sangrado con una serie de espacios en blanco. Toma mucha importancia el número de espacios en blanco que usemos, ya que deberán de tener ese mismo número de espacios todas las líneas del bloque, si no es así nos generará un error. Un fallo muy común es confundir el tabulador con el espacio.
 
-Por último, comentar que existen diferentes implementaciones de Python según el lenguaje base que se haya utilizado. Así pues, CPython está escrito en C, JPython está escrito en Java, IronPython está escrito en C#. De todas estas versiones, quizás la mas recomendad es la versión de C por su madurez o estabilidad.
+Por último, comentar que existen diferentes implementaciones de Python según el lenguaje base que se haya utilizado. Así pues, CPython está escrito en C, JPython está escrito en Java, IronPython está escrito en C#. De todas estas versiones, quizás la mas recomendada es la versión de C por su madurez o estabilidad.
 
 ### 5.2.2- Tipos de datos básicos
 
@@ -117,7 +121,7 @@ valorDiccionario{clave}
 
 ### 5.2.4- Listas
 
-Vamos a usar el tipo de datos listas para aquellas estructuras tipo tabla que son dinámicas. La definición de una lista se realiza encerrando entre corchetes `{}` los valores que necesitamos almacenar, siendo estos de cualquier tipo posible, incluso otras tablas o diccionarios.
+Vamos a usar el tipo de datos listas para aquellas estructuras tipo tabla que son dinámicas. La definición de una lista se realiza encerrando entre corchetes `[]` los valores que necesitamos almacenar, siendo estos de cualquier tipo posible, incluso otras tablas o diccionarios.
 
 ```py
 list1=["Valor1", 2, 2+4j]
@@ -129,7 +133,6 @@ Los índices en las listas en python no tienen porque ser solo positivos, se pue
 
 ```py
 list1[-1]   //2+4j
-list2
 ```
 
 Además al conseguir varios elementos consecutivos de la lista como una nueva lista, se realiza con un proceso sencillo, indicando los índices inicial y final a conseguir. Dichos índices estarán separados por `:`. Este mecanismo también permite utilizar negativos. en caso de que no establezcamos ningún orden va a pasar desde el primero hasta el último.
@@ -195,7 +198,7 @@ Para imprimir por pantalla con un formato predeterminado una variable usaremos l
 
 A la hora de imprimir con la función `print()` tenemos que señalar un par de características. Cuando separamos los valores por comas se imprimirá automáticamente un espacio entre ellos, sin embargo, cuando utilicemos el operador concatenación tendremos que añadir nosotros el espacio. Por otra parte es obligatorio convertir a cadena mediante la función `str()` [hasta 2.7].
 
-Un problema que nos vamos a encontrar es la utilización de los caracteres acentuados y la ñ. aunque por defecto el código fuente se escriba en formato UTF8 la función d entrada `raw_input()` se configura de manera general, siendo imprescindible codificar los caracteres al lenguaje adecuado antes de imprimirlos usando la función `encode(normaISO)`. [Referencia](https://docs.python.org/2/library/sys.html).
+Un problema que nos vamos a encontrar es la utilización de los caracteres acentuados y la ñ. aunque por defecto el código fuente se escriba en formato UTF8 la función de entrada `raw_input()` se configura de manera general, siendo imprescindible codificar los caracteres al lenguaje adecuado antes de imprimirlos usando la función `encode(normaISO)`. [Referencia](https://docs.python.org/2/library/sys.html).
 
 En el lenguaje C se implementan las variables de sistema `argV` y `argC`. Bajo Python se ha seguido una nomenclatura similar creando una lista llamada `argV` que nos dará acceso a todos los parámetros que nos pasen desde el sistema. Para poder utilizarlo tendremos que importarlo con la cláusula `import sys`.
 
@@ -248,7 +251,7 @@ Aunque Python no tiene bucles clásico tipo C se puede simular fácilmente crean
 Una ultima construcción del bucle 'for' respecto a la sentencia 'if' nos va a permitir filtrar valores de listas.
 
 ```py
-[elemento for elemento in lista if len(elemento) > 1]
+elemento for elemento in lista if len(elemento) > 1
 ```
 
 Vamos a generar una nueva lista con los objetos que cumplan la condición, en este caso con aquellos objetos cuya longitud sea mayor de 1.
@@ -293,14 +296,14 @@ Aparece una construcción tomada de los lenguajes funcionales llamada función l
 (lambda x: x*2)(3)
 ```
 
-Pasado el parámetro 3 a la función en línea x*2 obteniendo en este caso el valor 12
+Pasado el parámetro 3 a la función en línea x\*2 obteniendo en este caso el valor 12
 
 ### 5.7.3- POO
 
-Python recoge lo mejor de los lenguajes existentes y lo reutiliza para su beneficio. Además de ser un lenguaje estructurado es además un lenguaje orientado a objetos, de forma que incorpora la mayoría de los paradigmas de dicho lenguaje de programación. Para definir una clase utilizaremos la palabra reservada `class` seguida de el nombre deseado de la clase seguido de `:`. Todo el contenido de la clase llevará el sangrado oportuno. Cada método perteneciente a dicha clase va a ser creado como una función general, utilizando las características que hemos visto hasta ahora. Los métodos `getTipo()` y `setTipo()` son utilizados para establecer el valor de las propiedades tipo definidas en el constructor.
+Python recoge lo mejor de los lenguajes existentes y lo reutiliza para su beneficio. Además de ser un lenguaje estructurado es además un lenguaje orientado a objetos, de forma que incorpora la mayoría de los paradigmas de dicho lenguaje de programación. Para definir una clase utilizaremos la palabra reservada `class` seguida del nombre deseado de la clase seguido de `:`. Todo el contenido de la clase llevará el sangrado oportuno. Cada método perteneciente a dicha clase va a ser creado como una función general, utilizando las características que hemos visto hasta ahora. Los métodos `getTipo()` y `setTipo()` son utilizados para establecer el valor de las propiedades tipo definidas en el constructor.
 
 ```py
-_init__(self.tipo())
+__init__(self.tipo())
 ```
 
 A la hora de definir métodos para una clase la única particularidad que debemos tener en cuenta es que el primer parámetro de cada método será un objeto. Será un objeto introducido por el intérprete cuando se llame. En caso del constructor dicho objeto es un nuevo objeto, en el resto de casos será el objeto que representa a si mismo.
@@ -319,7 +322,7 @@ La implementación de propiedades a través de métodos getter y setter también
 
 En el constructor definiremos una propiedad privada y crearemos además dos métodos en la clase, uno para establecer o set y otro para recoger get. En ellos utilizaremos la propiedad privada y a continuación definiremos una propiedad pública con un nombre distinto, usando la sentencia `nombrePropiedad= property(metodo_get, metodo_set)`. De esta forma aparece una nueva propiedad virtual almacenada en nombrePropiedad en los que podremos controlar los cambios que se realizan a través de los nuevos métodos.
 
-Por otra parte las clases nos permiten del uso de un conjunto de métodos con nombres especiales que le darán funciones añadidas. Por ejemplo podremos comparar dos clases mediante unos operadores implementados en el método \_\_cmp__. Si necesitamos imprimir la clase con la función 'print' llamaremos al método \_\_str__ para hacerlo. Los métodos mas importantes a conocer son los siguientes:
+Por otra parte las clases nos permiten del uso de un conjunto de métodos con nombres especiales que le darán funciones añadidas. Por ejemplo podremos comparar dos clases mediante unos operadores implementados en el método \_\_cmp**. Si necesitamos imprimir la clase con la función 'print' llamaremos al método \_\_str** para hacerlo. Los métodos mas importantes a conocer son los siguientes:
 
 - `__init__(self, args)`: Constructor
 - `__del__(self)`: Destructor
@@ -330,4 +333,4 @@ Por otra parte las clases nos permiten del uso de un conjunto de métodos con no
 Para terminar el recorrido de las características mas importantes de la POO de python comentar que existen dos operadores que podremos usar para determinar la igualdad de los objetos, dichos operadores son:
 
 - `is`: Va a determinar si dos variables referencian al mismo objeto en memoria
-- `==`: Determina cuando dos objetos tienen el mismo valor, llamando al método \_\_cmp__ implementado en la clase.
+- `==`: Determina cuando dos objetos tienen el mismo valor, llamando al método \_\_cmp\_\_ implementado en la clase.
