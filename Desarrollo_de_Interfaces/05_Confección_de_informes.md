@@ -45,7 +45,7 @@ Los informes no estructurados son mas sencillos y seguros pero por contra requie
 
   En esta sección es en la que se escribe en cada pagina información relativa a la empres. Puede contener anotaciones generales como por ejemplo si es una factura, la dirección del cliente, el nombre de la factura, etc.
 
-- Encabezado del informe:
+- Detalle del informe:
 
   En esta sección es donde vamos a alojar los campos del origen de datos, es decir, almacenaremos las filas o registros que generaran la información del informe.
 
@@ -122,6 +122,6 @@ Habrá 4 casos en los que se deberán utilizar los subinformes:
 - Para poder presentar diferentes vistas de los mismos datos dentro de un único informe.
 - Para realizar una o varias búsquedas desde un campo no indexado en un campo de búsqueda.
 
-## qqq- mover a practica
+  ## qqq- mover a practica
 
 El componente de datos es el componente que vamos a usar para obtener datos de la base de datos. Lo primero que haremos será asignar la fuente de datos cogiendo la cadena de conexión de un 'App.config' de nuestros proyectos de Visual Studio. Tendremos que tener en cuenta el nombre del servidor que va a representar la máquina donde esta la instancia del servidor sql y la Base de datos a la que vamos a conectarnos.

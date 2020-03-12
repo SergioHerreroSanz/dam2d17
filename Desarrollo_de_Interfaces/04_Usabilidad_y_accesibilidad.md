@@ -31,7 +31,7 @@ Cuestiones que nos hemos de preguntar respecto a si un software es rentable o no
 
 2. Eficiencia:
 
-   Una vez que los usuarios han aprendido el diseño básico y funcionamiento nos preguntaremos, Cuanto tardarán en realizar las tareas?
+   Una vez que los usuarios han aprendido el diseño básico y funcionamiento nos preguntaremos, ¿Cuánto tardarán en realizar las tareas?
 
 3. Cualidad de ser recordado
 
@@ -145,13 +145,8 @@ Esta ISO va a determinar la ergonomía del software para interfaces de usuario m
 
 Existen multitud de métodos para evaluar la usabilidad de las aplicaciones informáticas. Este es un concepto crucial para asegurar un buen diseño de la interfaz de usuario, así como la interacción entre el sistema y el usuario final. Entre los diferentes tipos, dos muy usados son:
 
-- User testing:
-
-  En este método, el usuario final tiene una gran influencia en el desarrollo del prototipo de la aplicación. Por ello, requiere de una gran planificación, y como desventaja, tiene costes elevados
-
-- Usability inspection (Inspección de usabilidad)
-
-  En este caso, la participación del usuario es testimonial, y se echa mano de expertos en desarrollo y usabilidad. Estos se fundamentarán sobre guías de estilo y metodologías ya establecidas.
+- User testing: En este método, el usuario final tiene una gran influencia en el desarrollo del prototipo de la aplicación. Por ello, requiere de una gran planificación, y como desventaja, tiene costes elevados
+- Usability inspection (Inspección de usabilidad): En este caso, la participación del usuario es testimonial, y se echa mano de expertos en desarrollo y usabilidad. Estos se fundamentarán sobre guías de estilo y metodologías ya establecidas.
 
 En la siguiente tabla vamos a mostrar una serie de métodos aplicables de las diferentes fases del ciclo de desarrollo del sistema, que permitirán alcanzar mayores cuotas de usabilidad y dirá además las fases del ciclo en que pueden utilizarse.
 
@@ -163,21 +158,10 @@ En la siguiente tabla vamos a mostrar una serie de métodos aplicables de las di
 
 Las métricas que se presentan a continuación propuestas por Constantine y Lokwood se utilizan para medir la complejidad y la adecuación del diseño de la interfaz de usuario. Va a impedir además que haya una correcta cohesión con los datos. La información dada por estas métricas es útil para hacer una estimación de la facilidad de aprendizaje de la interfaz, con la consiguiente disminución de errores en la utilización de la interfaz por el usuario.
 
-- Eficiencia esencial (Essential efficiency):
-
-  Esta métrica pretende medir la simplicidad de la interfaz. Para ello va a tener en cuenta el número de pasos que lleva a cabo un usuario para la realización de una tarea, como por ejemplo el número de clics que debe realizar para formatear un documento.
-
-- Visibilidad de la tarea (Task visibility):
-
-  La visibilidad de la tarea mide la proporción de objetos del interfaz o elementos necesarios para completar una tarea.
-
-- Uniformidad de esquema (Layout uniformity):
-
-  Va a medir la uniformidad y regularidad del esquema de diseño de la interfaz. Tendrá en cuenta como de similares serán los elementos de la interfaz.
-
-- Coherencia visual (Visual concordance):
-
-  Esta métrica trata de medir la comprensibilidad de una interfaz.
+- Eficiencia esencial (Essential efficiency): Esta métrica pretende medir la simplicidad de la interfaz. Para ello va a tener en cuenta el número de pasos que lleva a cabo un usuario para la realización de una tarea, como por ejemplo el número de clics que debe realizar para formatear un documento.
+- Visibilidad de la tarea (Task visibility): La visibilidad de la tarea mide la proporción de objetos del interfaz o elementos necesarios para completar una tarea.
+- Uniformidad de esquema (Layout uniformity): Va a medir la uniformidad y regularidad del esquema de diseño de la interfaz. Tendrá en cuenta como de similares serán los elementos de la interfaz.
+- Coherencia visual (Visual concordance): Esta métrica trata de medir la comprensibilidad de una interfaz.
 
 Las pruebas de usabilidad son una forma de medir el grado de corrección en que una persona puede usar un recurso, como pueda ser por ejemplo una página web, una interfaz de usuario o un dispositivo.
 
@@ -185,21 +169,10 @@ Las pruebas de usabilidad consisten en seleccionar a un grupo de usuarios de una
 
 Mientras el usuario prueba la aplicación, el equipo de diseño y desarrollo toman nota de la interacción, especialmente los errores y dificultades con los que se encuentren los propios usuarios. No es necesario que se trate de una aplicación completamente acabada, pudiendo tratarse de versiones beta. Este hecho va a permitir ver la evolución de la aplicación y las necesidades de adaptación a los usuarios de esta.
 
-- Exactitud:
-
-  La exactitud será el número de errores cometidos por los sujetos de la prueba, además medirá si estos errores son recuperables o no al usar los datos y la aplicación.
-
-- Tiempo:
-
-  Va a medir el tiempo requerido para concluir una actividad.
-
-- Recuerdo:
-
-  Esta métrica medirá cuanto recuerda el usuario después de un periodo sin utilizar la aplicación.
-
-- Respuesta emocional:
-
-  Esta métrica va a medir como s e siente el usuario al terminar la tarea, si se siente bajo tensión, satisfecho, molesto, etc.
+- Exactitud: La exactitud será el número de errores cometidos por los sujetos de la prueba, además medirá si estos errores son recuperables o no al usar los datos y la aplicación.
+- Tiempo: Va a medir el tiempo requerido para concluir una actividad.
+- Recuerdo: Esta métrica medirá cuanto recuerda el usuario después de un periodo sin utilizar la aplicación.
+- Respuesta emocional: Esta métrica va a medir como s e siente el usuario al terminar la tarea, si se siente bajo tensión, satisfecho, molesto, etc.
 
 ## 4.5- Pruebas de expertos, formularios tipo
 
