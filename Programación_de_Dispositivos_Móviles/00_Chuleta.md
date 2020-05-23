@@ -43,7 +43,9 @@
     - [Nativos](#nativos-1)
   - [Propios](#propios-1)
     - [Locales/Iniciados](#localesiniciados)
-    - [Vinculasdos/Remotos](#vinculasdosremotos)
+    - [Vinculados/Remotos](#vinculadosremotos)
+  - [Acceso a datos Remotos](#acceso-a-datos-remotos)
+    - [Volley](#volley)
 
 ## Diseño básico
 
@@ -950,4 +952,12 @@ New->Service->Service
 
 ```
 
-### Vinculasdos/Remotos
+### Vinculados/Remotos
+
+## Acceso a datos Remotos
+
+### Volley
+
+```xml
+implementation 'com.android.volley:volley:1.1.1'
+```
